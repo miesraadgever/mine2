@@ -26,3 +26,11 @@ body {
     text-wrap: balance;
   }
 }
+
+
+button {
+  padding: 2px 4px 2px 4px;
+  border: 2px #2d2d2d solid;
+  background: lightgrey;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
