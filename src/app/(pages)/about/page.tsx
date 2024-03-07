@@ -53,7 +53,7 @@ const Page = () => {
           er een werk uit wat op meerdere facetten interessant kan zijn.’ </p>
         </div>
         <div className="flex col-5 flex-column">
-          <p className="font-medium text-4xl mb-3 mt-10 pl-7"> / NE/ -Neeltje de Jong </p>
+          <p className="font-medium text-4xl mb-3 mt-10 pl-7"> / NE/ - Neeltje de Jong </p>
             <p className="pl-7">
               Neeltje werkt als autonoom beeldend kunstenaar met een achtergrond
               in dans, textiel en modeontwerp. Haar melancholisch-poëtische
