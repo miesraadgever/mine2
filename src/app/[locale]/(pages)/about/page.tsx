@@ -1,9 +1,13 @@
+"use client"
+
 import React from "react";
 import Image from "next/image";
+import {CldImage} from "next-cloudinary";
 
 const Page = () => {
   return (
       <>
+        <CldImage alt={"image"} src={"1"}  width={400} height={500}/>
         <div className="flex flex-row gap-10 col-12 m-10">
           <div className="flex col-4 ">
             Begonnen in 2020 als modemerk, genaamd mi_ne (fonetisch: /’mini’/),
