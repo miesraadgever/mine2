@@ -46,7 +46,7 @@ const Gallery: React.FC<GalleryProps> = ({ results, fetchFolders, video }) => {
     <>
       <div className={"relative w-[95%] max-w-6xl mx-auto overflow-hidden"}>
         <video className={"w-full"} loop muted autoPlay>
-          <source src={"/edithomepage012023-2.mp4"}></source>
+          <source src={""}></source>
         </video>
       </div>
       <div className="flex justify-center gap-5 mt-8 text-lg ">
