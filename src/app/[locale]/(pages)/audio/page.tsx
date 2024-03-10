@@ -28,11 +28,11 @@ const Page = () => {
         </p>
       </div>
       <div className={"flex flex-wrap grow-0 w-[70%] gap-6 pt-10"}>
-        <AudioPlayer src={"23-01-24.mp3"} image={cover230124}></AudioPlayer>
-        <AudioPlayer src={"14-04-23.mp3"} image={cover140423}></AudioPlayer>
+        <AudioPlayer src={""} image={cover230124}></AudioPlayer>
+        <AudioPlayer src={""} image={cover140423}></AudioPlayer>
         <AudioPlayer src={"mix-sots.mp3"} image={""}></AudioPlayer>
-        <AudioPlayer src={"18-02-23.mp3"} image={cover180223}></AudioPlayer>
-        <AudioPlayer src={"12-03-2023.mp3"} image={cover12032023}></AudioPlayer>
+        <AudioPlayer src={""} image={cover180223}></AudioPlayer>
+        <AudioPlayer src={""} image={cover12032023}></AudioPlayer>
       </div>
     </div>
   );
