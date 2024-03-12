@@ -5,7 +5,7 @@ import CloudinaryImage from "@/components/Cloudinary-image";
 import { SearchResult } from "@/app/[locale]/page";
 import { Size, useWindowSize } from "@/lib/hooks/useWindowsize";
 import { useI18n } from "../../translations/client";
-import { CldVideoPlayer } from "next-cloudinary";
+
 
 interface GalleryProps {
   results: SearchResult[];

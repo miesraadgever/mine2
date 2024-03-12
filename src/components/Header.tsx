@@ -7,9 +7,11 @@ import LanguageSelector from "@/components/LanguageSelector";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import Hamburger from "hamburger-react";
 
+
 const Header = () => {
   const locale = useCurrentLocale();
   const t = useI18n();
+
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 445;
   const [isOpen, setOpen] = useState(false);

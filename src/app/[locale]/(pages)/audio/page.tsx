@@ -25,6 +25,7 @@ const Page = () => {
           {t("general.ongoing")}
         </p>
       </div>
+
       <div className={`flex flex-wrap grow-0 w-[100%] gap-6 pt-10 ${smallScreen && "justify-center"}`}>
         <AudioPlayer
           src={
@@ -56,8 +57,8 @@ const Page = () => {
           }
           image={"/18-02-23.png"}
         />
-      </div>
     </div>
+      </div>
   );
 };
 
