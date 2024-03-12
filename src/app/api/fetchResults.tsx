@@ -24,26 +24,28 @@ export const fetchResults = async (folder: string): Promise<SearchResult[]> => {
     const altA = a.context.alt;
     const altB = b.context.alt;
 
-    // Extract year and month from the "mm.yyyy" format
-    const [monthA, yearA] = altA.split('.')
-    const [monthB, yearB] = altB.split('.')
+    const yearA = parseInt(altA.split(".")[1]);
+    const yearB = parseInt(altB.split(".")[1]);
 
-    // Compare years in descending order
-    if (yearA > yearB) {
-      return -1;
-    } else if (yearA < yearB) {
-      return 1;
-    } else {
-      // If years are the same, compare months in descending order
-      if (monthA > monthB) {
-        return -1;
-      } else if (monthA < monthB) {
-        return 1;
-      } else {
-        // If both years and months are the same, return 0
-        return 0;
-      }
+    const monthA = parseInt(altA.split(".")[0]);
+    const monthB = parseInt(altB.split(".")[0]);
+
+    // If months are both 00, prioritize them based on years
+    if (monthA === 0 && monthB === 0) {
+      return yearB - yearA; // Order based on years
+    } else if (monthA === 0) {
+      return -1; // monthA is 00, so it should come first
+    } else if (monthB === 0) {
+      return 1; // monthB is 00, so it should come first
     }
+
+    // First, compare years in descending order
+    if (yearB - yearA !== 0) {
+      return yearB - yearA;
+    }
+
+    // If years are equal, compare months in descending order
+    return monthB - monthA;
   };
 
   const sorted = result.resources.toSorted(sortByAlt);

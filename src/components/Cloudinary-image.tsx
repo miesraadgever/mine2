@@ -13,15 +13,15 @@ const CloudinaryImage = (props: any) => {
     <div className="flex flex-col">
       <Link href={props.caption}>
         <CldImage
-          className={`object-cover ${smallScreen ? "w-24 h-24" : "w-48 h-48"}`}
+          className={`object-cover ${smallScreen ? "w-36 h-36" : "w-48 h-48"}`}
           {...props}
         />
       </Link>
       <div
-        className={`flex flex-row ${smallScreen ? "w-24" : "w-48"} justify-between font-light text-sm`}
+        className={`flex flex-row ${smallScreen ? "w-36" : "w-48"} justify-between font-light text-sm`}
       >
         <Link href={props.caption}>{props.title}</Link>
-        <div>{props.alt}</div>
+        <div>{props.alt.split(".")[1]}</div>
       </div>
     </div>
   );

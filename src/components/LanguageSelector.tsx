@@ -21,14 +21,19 @@ const LanguageSelector = () => {
               opacity: currentLocale === langKey ? 1 : 0.5,
               fontWeight: currentLocale === langKey ? "medium" : "normal",
               padding: "0.3rem",
-              lineHeight: "0"
+              lineHeight: "0",
             }}
             onClick={() => changeLocale(langKey === "nl" ? "nl" : "en")}
           >
             <i>{langKey}</i>
           </Button>
           {index < Object.keys(languages).length - 1 && (
-            <div className={"flex"} key={`language-divider${index} align-middle`}>_</div>
+            <div
+              className={"flex"}
+              key={`language-divider${index} align-middle`}
+            >
+              _
+            </div>
           )}
         </span>
       ))}

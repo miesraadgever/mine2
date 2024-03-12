@@ -4,7 +4,8 @@ import React, { useEffect, useState, useTransition } from "react";
 import CloudinaryImage from "@/components/Cloudinary-image";
 import { SearchResult } from "@/app/[locale]/page";
 import { Size, useWindowSize } from "@/lib/hooks/useWindowsize";
-import {useI18n} from "../../translations/client";
+import { useI18n } from "../../translations/client";
+import { CldVideoPlayer } from "next-cloudinary";
 
 interface GalleryProps {
   results: SearchResult[];
@@ -46,30 +47,34 @@ const Gallery: React.FC<GalleryProps> = ({ results, fetchFolders, video }) => {
     <>
       <div className={"relative w-[95%] max-w-6xl mx-auto overflow-hidden"}>
         <video className={"w-full"} loop muted autoPlay>
-          <source src={""}></source>
+          <source
+            src={
+              "https://res.cloudinary.com/dwgsproch/video/upload/v1709815707/homevideo/edithomepage012023-2_kwcapn.mp4"
+            }
+          ></source>
         </video>
       </div>
-      <div className="flex justify-center gap-5 mt-8 text-lg ">
+      <div className={`flex justify-center gap-5 ${smallScreen ? "mt-5" : "mt-8"} text-lg `}>
         <button
-          className={`${activePage === "all" ? "text-black" : "text-gray-400"} hover:opacity-50`}
+          className={`${activePage === "all" ? "opacity-100" : "opacity-50"} hover:opacity-50`}
           onClick={() => handleButtonClick("")}
         >
           {t("general.all")}
         </button>
         <button
-          className={`${activePage === "mi_ne" ? "text-black" : "text-gray-400"} hover:opacity-50`}
+          className={`${activePage === "mi_ne" ? "opacity-100" : "opacity-50"} hover:opacity-50`}
           onClick={() => handleButtonClick("mi_ne")}
         >
           mi_ne
         </button>
         <button
-          className={`${activePage === "mies" ? "text-black" : "text-gray-400"} hover:opacity-50`}
+          className={`${activePage === "mies" ? "opacity-100" : "opacity-50"} hover:opacity-50`}
           onClick={() => handleButtonClick("mies")}
         >
           mies
         </button>
         <button
-          className={`${activePage === "neeltje" ? "text-black" : "text-gray-400"} hover:opacity-50`}
+          className={`${activePage === "neeltje" ? "opacity-100" : "opacity-50"} hover:opacity-50`}
           onClick={() => handleButtonClick("neeltje")}
         >
           neeltje
@@ -77,7 +82,7 @@ const Gallery: React.FC<GalleryProps> = ({ results, fetchFolders, video }) => {
       </div>
       <div className={"mx-auto mt-10 w-[100%]"}>
         <div
-          className={`flex flex-wrap ${smallScreen ? "gap-4" : "gap-6"} justify-center`}
+          className={`flex flex-wrap ${smallScreen ? "gap-2 p-1" : "gap-4"} justify-center`}
         >
           {filteredResults?.map((result: SearchResult) => (
             <div key={result.public_id}>
