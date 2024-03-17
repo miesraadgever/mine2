@@ -17,9 +17,9 @@ const Page = () => {
           <a href="https://soundcloud.com/mies-neeltje" target="_blank">
             {t("audio.listen")}
           </a>
-          <br></br>
-          <br></br>
-          {t("general.ongoing")}
+          <br /><br />
+          {t("general.credits")} <i>{t("general.mies")}</i><br /><br />
+          <i>{t("general.ongoing")}</i>
         </p>
       </div>
       <div className={"flex flex-wrap grow-0 w-[70%] gap-6 pt-10"}>
