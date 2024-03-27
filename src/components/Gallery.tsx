@@ -6,7 +6,6 @@ import { SearchResult } from "@/app/[locale]/page";
 import { Size, useWindowSize } from "@/lib/hooks/useWindowsize";
 import { useI18n } from "../../translations/client";
 
-
 interface GalleryProps {
   results: SearchResult[];
   fetchFolders: (folder: string) => Promise<SearchResult[]>;
@@ -54,7 +53,9 @@ const Gallery: React.FC<GalleryProps> = ({ results, fetchFolders, video }) => {
           ></source>
         </video>
       </div>
-      <div className={`flex justify-center gap-5 ${smallScreen ? "mt-5" : "mt-8"} text-lg `}>
+      <div
+        className={`flex justify-center gap-5 ${smallScreen ? "mt-5" : "mt-8"} text-lg `}
+      >
         <button
           className={`${activePage === "all" ? "opacity-100" : "opacity-50"} hover:opacity-50`}
           onClick={() => handleButtonClick("")}

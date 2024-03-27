@@ -46,7 +46,6 @@ export const fetchResults = async (folder: string): Promise<SearchResult[]> => {
 
     // If years are equal, compare months in descending order
     return monthB - monthA;
-
   };
 
   const sorted = result.resources.toSorted(sortByAlt);
