@@ -1,8 +1,15 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { useI18n } from "../../../../../translations/client";
 import definitie from "../../../../../public/mi_nedefinitie.jpg";
+import {useWindowSize} from "@/lib/hooks/useWindowsize";
 
 const Page = () => {
+  const t = useI18n();
+
+
   return (
     <>
       <div className="flex flex-row gap-10 col-12">
@@ -140,11 +147,11 @@ const Page = () => {
               Expositie ‘blaadjesromance’ en ‘droom archief’ te Nijverheid
               Utrecht, 2018 <br />
               Mode collectie ‘shanti’ te Wilminktheater Enschede, 2016
-            </p>{" "}
+            </p>
           </div>
         </div>
       </div>
-    </>
+   </>
 
   );
 };
