@@ -21,6 +21,7 @@ export const fetchResults = async (folder: string): Promise<SearchResult[]> => {
     .execute()) as { resources: SearchResult[] };
 
   const sortByAlt = (a: SearchResult, b: SearchResult) => {
+    if (!!a.context && !!b.context) {
     const altA = a.context.alt;
     const altB = b.context.alt;
 
@@ -44,8 +45,11 @@ export const fetchResults = async (folder: string): Promise<SearchResult[]> => {
       return yearB - yearA;
     }
 
+
     // If years are equal, compare months in descending order
     return monthB - monthA;
+    }
+    else return 0
   };
 
   const sorted = result.resources.toSorted(sortByAlt);

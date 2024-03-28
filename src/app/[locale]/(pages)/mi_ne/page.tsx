@@ -15,6 +15,7 @@ export default async function page() {
   let results: SearchResult[] = [];
 
   await fetchResults("mi_ne").then((response) => (results = response));
+  console.log(results)
 
   return (
     <main className="min-h-screen p-5">
