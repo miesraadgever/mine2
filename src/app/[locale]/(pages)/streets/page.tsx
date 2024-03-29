@@ -21,6 +21,7 @@ const Page = () => {
                        {t("general.ongoing")}
                    </p>
                </div>
+               {/* Grote afbeelding rechts  */}
                {smallScreen && (
                    <div className={"col-12 justify-center flex"}>
                        <div className="flex ">
@@ -72,6 +73,8 @@ const Page = () => {
                            />
                        </div>
            </div>
+            {/* Grote afbeelding rechts  */}
+
             {!smallScreen && (
                     <div className={`fixed right-0 justify-end flex col-6 p-0`}>
                         <img
