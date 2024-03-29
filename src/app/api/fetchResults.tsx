@@ -21,6 +21,7 @@ export const fetchResults = async (folder: string): Promise<SearchResult[]> => {
     .execute()) as { resources: SearchResult[] };
 
   const sortByAlt = (a: SearchResult, b: SearchResult) => {
+    //TODO implement fix when there are no results!!
     if (!!a.context && !!b.context) {
     const altA = a.context.alt;
     const altB = b.context.alt;

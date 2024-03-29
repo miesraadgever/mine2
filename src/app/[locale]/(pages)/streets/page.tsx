@@ -15,7 +15,7 @@ const Page = () => {
         <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
            <div className={`flex flex-col ${smallScreen ? "col-12" : "col-6"}`}>
                {/* Text */}
-               <div className="p-6 mb-4">
+               <div className={`${smallScreen ? "ml-2 mb-4" : "p-6 mb-4"} `}>
                    <h3 className="font-medium text-xl">ON THE STREETS</h3>
                    <p className="mt-3">
                        {t("general.ongoing")}
@@ -34,7 +34,7 @@ const Page = () => {
                    </div>
                )}
                        {/* Images */}
-                       <div className={`flex-wrap flex gap-3 mt-10 ${smallScreen ? "ml-4" : "ml-6 justify-start"}`}>
+                       <div className={`flex-wrap flex gap-3 mt-10 ${smallScreen ? " justify-center" : "ml-6 justify-start"}`}>
                                <CldImage
                                    src={"https://res.cloudinary.com/dwgsproch/image/upload/v1710076528/27.1%20MI_NE%20-%20streets%202020%207/MN_streets_dx7pnn.jpg"}
                                    alt={"book1"}
