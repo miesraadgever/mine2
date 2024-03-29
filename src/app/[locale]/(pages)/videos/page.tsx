@@ -2,16 +2,20 @@
 
 import React from "react";
 import { useI18n } from "../../../../../translations/client";
-import {useWindowSize} from "@/lib/hooks/useWindowsize";
+import { useWindowSize } from "@/lib/hooks/useWindowsize";
 
 const Page = () => {
   const t = useI18n();
-    const windowSize = useWindowSize();
-    const smallScreen = windowSize.width! < 600;
+  const windowSize = useWindowSize();
+  const smallScreen = windowSize.width! < 980;
 
   return (
-      <div className={`flex ${smallScreen ? "flex-column " : "flex-row"} columns-2 gap-10`}>
-          <div className={`flex-column grow-0 ${smallScreen ? "w-[100] " : "w-[25%]"}  ps-10 pt-10`}>
+    <div
+      className={`flex ${smallScreen ? "flex-column " : "flex-row"} columns-2 gap-10`}
+    >
+      <div
+        className={`flex-column grow-0 ${smallScreen ? "w-[100] " : "w-[35%]"}  ps-10 pt-10`}
+      >
         <h3 className="font-medium text-xl">VIDEO</h3>
         <p className="mt-3">
           {t("video.caption")}
@@ -24,7 +28,9 @@ const Page = () => {
           {t("general.ongoing")}
         </p>
       </div>
-          <div className={`flex flex-wrap grow-0 w-[100%] gap-6 pt-10 ${smallScreen && "justify-center"}`}>
+      <div
+        className={`flex flex-wrap grow-0 w-[100%] gap-6 pt-10 ${smallScreen && "justify-center"}`}
+      >
         <iframe
           width="800"
           height="500"

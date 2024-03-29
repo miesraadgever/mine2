@@ -6,103 +6,138 @@ export default {
     credits: "concept en realisatie",
     mies: "mies raadgever",
     neeltje: "neeltje de jong",
-    mi_ne: 'mies raadgever & neeltje de jong',
+    mi_ne: "mies raadgever & neeltje de jong",
   },
-  audio : {
+  about: {
+    paragraph1:
+      "Begonnen in 2020 als modemerk, genaamd mi_ne (fonetisch: /’mini’/), onderzochten mies raadgever en neeltje de jong meer dan alleen kleding. Vanuit hier ontstond mi_ne movement; een interdisciplinair collectief.",
+    paragraph2:
+      "Binnen mi_ne movement onderzoeken mies en neeltje oa. thema’s als dualiteit, feminine rage en lichamelijke expressie. Deze thema’s worden zowel mysthiek als confronterend tot vorm gebracht in projecten variërend van audiovisueel werk tot schilderijen, tot teksten en terug naar kleding.",
+    paragraph3:
+      "Op de persoonlijke pagina’s vind je meer over onze eigen projecten;",
+    miesParagraph1: "Mies werkt als beeldend kunstenaar en ontwerper",
+    miesParagraph2:
+      "‘Opgeleid als grafisch ontwerper begon ik met het abstract verbeelden van concepten. Langzamerhand is mijn praktijk meer ge-shift naar werk wat de scheidingslijn en grenzen tussen digitaal en analoog werk ontdekt.'",
+    miesParagraph3:
+      "Door analoog werk te vermengen met de mogelijkheden van digitale media, vertel ik mijn verhaal in een eigen handschrift. Mijn werk is figuratief maar de boodschap kan abstract zijn. Hierdoor laat ik veel ruimte over voor eigen interpretatie. De toeschouwer kan ieder een andere en persoonlijke boodschap uit het werk halen",
+    miesParagraph4:
+      "‘Ik werk graag samen of in opdracht van anderen. Samen creëren is voor mij belangrijk. Door meerdere disciplines en visies samen te brengen komt er een werk uit wat op meerdere facetten interessant kan zijn.'",
+    neeltjeParagraph1:
+      "Neeltje werkt als autonoom beeldend kunstenaar met een achtergrond in dans, textiel en modeontwerp. Haar melancholisch-poëtische handschrift is te herkennen in haar verschillende uitingsvormen.",
+    neeltjeParagraph2:
+      "‘Mijn werk gaat veel over beweging. Beweging van lichamen, beweging in ritueel, beweging door verhaal. Ik leer diep door lichaam in plaats van geest. Keer op keer bewegen, totdat het diep in mijn wezen geworteld raakt; een belichaamde praktijk.’",
+    neeltjeParagraph3:
+      "De verhalen die hier uit ontstaan vertaal ik naar kunst rondom het lichaam. Daar waar het begon. De esthetiek en tactiliteit van mijn werk is belangrijk voor mij omdat het het gevoel vertaalt van het verhaal dat ik wil vertellen. Video is een medium waar ik graag alle aspecten in samenbreng, hierin voel ik dat ik het beste mijn gedachtestroom kan vangen en overbrengen.",
+    neeltjeParagraph4:
+      "‘Ik geniet ervan om verhalen te vertellen. Om uitdrukking te geven aan het mythische, het ongedefinieerde, het vage, het onsamenhangende, het amorfe, het rauwe, het trieste en het kleine.'",
+    neeltjeVertoning1:
+      "Publicatie en vertoning korte film SHE ‘OTW, Historische kelders Arnhem, 2022",
+    neeltjeVertoning2:
+      "Workshop ‘waterbraidings’, Historische kelders Arnhem, 2022",
+    neeltjeVertoning3:
+      "Videoperformance ‘Kroning van een weesmeisje’ voor collectief Painted Series, Amsterdam, 2022",
+    neeltjeVertoning4:
+      "Performance ‘ChildhoodStories’ voor Maria Vogt, Café Bosh, Arnhem, 2021",
+    neeltjeVertoning5:
+      "Expositie ‘blaadjesromance’ en ‘droom archief', Nijverheid, Utrecht, 2018",
+    neeltjeVertoning6: "Mode collectie ‘shanti’, Wilminktheater Enschede, 2016",
+  },
+  audio: {
     caption: "onderzoek in geluid",
-    listen: "luister op soundcloud"
+    listen: "luister op soundcloud",
   },
-  droom : {
+  droom: {
     caption: "mini licht installatie",
     materiaal: "waterverf en handwerk op bourette zijde",
-
   },
-  blaadjes : {
+  blaadjes: {
     caption: "waterverf op zijde",
   },
-  florilegium : {
-    caption: "bloemlezing is de literaire term voor een verzameling fragmenten uit poëzie of proza",
+  florilegium: {
+    caption:
+      "bloemlezing is de literaire term voor een verzameling fragmenten uit poëzie of proza",
     subcaption: "teksten onttrokken uit het album ‘blonde’ van frank ocean",
   },
-  wearables : {
+  wearables: {
     caption: "verschillende handgemaakte sieraden",
     subcaption: "beschikbaar op aanvraag",
   },
-  nostalgia : {
-  caption: "impressie van de shoot voor de collectie 'nostalgia'",
-  subcaption: "beschikbaar op aanvraag",
-  credits: 'concept, styling en nabewerking',
-  foto: 'fotografie',
-  model: 'modellen',
-  lisanne: 'lisanne van der werve',
-  loek: 'loek hennipman & noa iesberts',
+  nostalgia: {
+    caption: "impressie van de shoot voor de collectie 'nostalgia'",
+    subcaption: "beschikbaar op aanvraag",
+    credits: "concept, styling en nabewerking",
+    foto: "fotografie",
+    model: "modellen",
+    lisanne: "lisanne van der werve",
+    loek: "loek hennipman & noa iesberts",
   },
-  zee : {
+  zee: {
     caption: "sfeerimpressie 'nostalgia'",
   },
-  connection : {
-  caption: "exploratie door middel van korte video performance",
-  performers: "performers",
-  muziek: 'muziek sample',
-  maya: 'maya nitzan & david bienvenue',
-  buddy: 'running around - buddy ross',
+  connection: {
+    caption: "exploratie door middel van korte video performance",
+    performers: "performers",
+    muziek: "muziek sample",
+    maya: "maya nitzan & david bienvenue",
+    buddy: "running around - buddy ross",
   },
-  blendr : {
+  blendr: {
     caption: "exploratie in blendr",
   },
-  glitteren : {
-  caption: "exploratie, expressie",
-  model: "modellen",
-  loek: 'loek hennipman, martinus papilaja & niels matitawaer',
+  glitteren: {
+    caption: "exploratie, expressie",
+    model: "modellen",
+    loek: "loek hennipman, martinus papilaja & niels matitawaer",
   },
-  angel : {
+  angel: {
     caption: "sadgirlwearables:",
     subcaption: "tule jurk & broek met bedrukkingen van bleek",
   },
-  sorrow : {
+  sorrow: {
     caption: "vrije expressie: top en rok",
     top: "top in samenwerking met",
     rok: "rok in samenwerking met",
     alex: "alexandra polakova",
     niels: "niels matitawaer",
   },
-  nwaad : {
+  nwaad: {
     caption: "installatie in opdracht van NWAA documentaire",
-    credits: "pepijn van de grift, lieke steen, mies raadgever & neeltje de jong",
+    credits:
+      "pepijn van de grift, lieke steen, mies raadgever & neeltje de jong",
     tech: "technische ondersteuning",
     bart: "bart kipping",
   },
-  again : {
+  again: {
     caption: "exploratie van tekenkunst en haar relatie met het lichaam",
     model: "model",
     helen: "helen cheng",
   },
-  maybe : {
+  maybe: {
     caption: "sadgirlwearables:",
     subcaption: "cropped hoodie",
     collab: "in samenwerking met",
     chloe: "chloé pérès-labourdette",
   },
-  torn : {
+  torn: {
     caption: "sadgirlwearables:",
     subcaption: "dubbellaags gescheurde jeans",
   },
-  girl : {
+  girl: {
     caption: "sadgirlwearables:",
     subcaption: "jurk van vintage zijde",
   },
-  embody : {
+  embody: {
     caption: "multi visuele installatie",
     credits: "lieke steen & neeltje de jong",
   },
-  waas : {
+  waas: {
     concept: "concept",
     credits: "igor herder & mies raadgever",
     tekst: "audio en tekst",
     igor: "igor herder",
     visuals: "visuals en realisatie",
   },
-  braiding : {
+  braiding: {
     caption: "vlechten als belichaamde praktijk",
     subcaption: "'weten door lichaam in plaats van geest'",
     credits: "uit de dagelijkse beoefening van",
@@ -116,6 +151,9 @@ export default {
   },
   sketches: {
     caption: "verschillende tekeningen",
-    material: "pen en markers op papier"
+    material: "pen en markers op papier",
   },
-  };
+  tattoos: {
+    caption: "stick and poke tattoos",
+  },
+};

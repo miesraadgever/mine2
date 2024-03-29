@@ -6,7 +6,8 @@ export const fetchResults = async (folder: string): Promise<SearchResult[]> => {
   let expression;
 
   if (folder === "") {
-    expression = "resource_type:image";
+    //search in folders mi_ne, mies and neeltje
+    expression = "resource_type:image AND folder:mi_ne OR folder:mies OR folder:neeltje";
   } else {
     expression = `resource_type:image AND folder=${folder}`;
   }
@@ -17,10 +18,11 @@ export const fetchResults = async (folder: string): Promise<SearchResult[]> => {
     .with_field("metadata")
     .with_field("image_metadata")
     .with_field("context")
-    .max_results(30)
     .execute()) as { resources: SearchResult[] };
 
   const sortByAlt = (a: SearchResult, b: SearchResult) => {
+    //TODO implement fix when there are no results!!
+    if (!!a.context && !!b.context) {
     const altA = a.context.alt;
     const altB = b.context.alt;
 
@@ -44,9 +46,11 @@ export const fetchResults = async (folder: string): Promise<SearchResult[]> => {
       return yearB - yearA;
     }
 
+
     // If years are equal, compare months in descending order
     return monthB - monthA;
-
+    }
+    else return 0
   };
 
   const sorted = result.resources.toSorted(sortByAlt);

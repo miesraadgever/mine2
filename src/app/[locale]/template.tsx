@@ -5,9 +5,11 @@ import dynamic from "next/dynamic";
 
 const PageTamplate = ({ children }: { children: ReactNode }) => {
   const locale = getCurrentLocale();
-    const DynamicHeader = dynamic(() => import('@/components/Header'), { ssr: false });  // Import your Header component dynamically
+  const DynamicHeader = dynamic(() => import("@/components/Header"), {
+    ssr: false,
+  }); // Import your Header component dynamically
 
-    return (
+  return (
     <div>
       <I18NProvider locale={locale}>
         <DynamicHeader />

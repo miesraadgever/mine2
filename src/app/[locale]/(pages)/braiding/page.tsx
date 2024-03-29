@@ -5,6 +5,7 @@ import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import {useWindowSize} from "@/lib/hooks/useWindowsize";
 
+
 const Page = () => {
   const t = useI18n();
     const windowSize = useWindowSize();
