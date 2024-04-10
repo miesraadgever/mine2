@@ -20,27 +20,35 @@ const Gallery: React.FC<GalleryProps> = ({ results, fetchFolders, video }) => {
   const smallScreen = windowSize.width! < 445;
   const t = useI18n();
 
-  useEffect(() => {
+  useEffect( () => {
     const url = document.URL;
     if (url.includes("mies")) {
       setActivePage("mies");
+      fetchResults("mies");
     } else if (url.includes("neeltje")) {
       setActivePage("neeltje");
+      fetchResults("neeltje");
     } else if (url.includes("mi_ne")) {
       setActivePage("mi_ne");
+      fetchResults("mi_ne");
     } else {
       setActivePage("all");
+      fetchResults("");
     }
-  }, [filteredResults]);
+  }, []);
 
   const handleButtonClick = async (folder: string) => {
     setActivePage(folder);
+    await fetchResults(folder);
+    window.history.replaceState({}, "", `/${folder}`);
+  };
+
+  const fetchResults = async (folder: string) => {
     startTransition(async () => {
       const newResults = fetchFolders(folder);
       setFilteredResults(await newResults);
     });
-    window.history.replaceState({}, "", `/${folder}`);
-  };
+  }
 
   return (
     <>

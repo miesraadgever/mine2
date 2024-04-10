@@ -4,6 +4,8 @@ import { SearchResult } from "@/app/[locale]/page";
 
 export const fetchResults = async (folder: string): Promise<SearchResult[]> => {
   let expression;
+  //@ts-ignore
+  let result: { resources: SearchResult[] } = [];
 
   if (folder === "") {
     //search in folders mi_ne, mies and neeltje
@@ -12,13 +14,19 @@ export const fetchResults = async (folder: string): Promise<SearchResult[]> => {
     expression = `resource_type:image AND folder=${folder}`;
   }
 
-  const result = (await cloudinary.v2.search
-    .expression(`${expression}`)
-    .sort_by("public_id", "desc")
-    .with_field("metadata")
-    .with_field("image_metadata")
-    .with_field("context")
-    .execute()) as { resources: SearchResult[] };
+
+  try {
+    result = (await cloudinary.v2.search
+        .expression(`${expression}`)
+        .sort_by("public_id", "desc")
+        .with_field("metadata")
+        .with_field("image_metadata")
+        .with_field("context")
+        .execute()) as { resources: SearchResult[] };
+  } catch (e) {
+    console.log(e)
+  }
+
 
   const sortByAlt = (a: SearchResult, b: SearchResult) => {
     //TODO implement fix when there are no results!!
@@ -53,7 +61,11 @@ export const fetchResults = async (folder: string): Promise<SearchResult[]> => {
     else return 0
   };
 
-  const sorted = result.resources.toSorted(sortByAlt);
+  if (result.resources !== undefined) {
+    const sorted = result!.resources.toSorted(sortByAlt);
+    return sorted;
+  } else {
+    return []
+  }
 
-  return sorted;
 };

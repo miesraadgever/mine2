@@ -3,10 +3,11 @@ export default {
     home: "home",
     all: "all",
     ongoing: "ongoing ->",
-    credits: "concept en realization",
+    credits: "concept and realization",
     mies: "mies raadgever",
     neeltje: "neeltje de jong",
     mi_ne: "mies raadgever & neeltje de jong",
+    prijsaanvraag: "price on request"
   },
   about: {
     paragraph1:
@@ -158,4 +159,30 @@ export default {
   tattoos: {
     caption: "stick and poke tattoos",
   },
+  stageigor: {
+    caption: "stage design for performances of igor herder's kind aan zee",
+    caption2: "at melkweg amsterdam, roodkapje rotterdam and tivoli utrecht",
+    extracredits: "In collaboration with"
+  },
+  melancholy: {
+    caption: "Melancholy Archive, born out of intuitive canvas painting in 2021, intertwines various elements. \n",
+    caption2: "The text, like a scream in the background, resides behind the embodiment of emptiness. Captured in thoughts and expectations, portraying the duality of feminine aggression.\n"+
+        "Melancholy Archive extends beyond a single moment. The canvas translated into a performance, executed by Mies and Neeltje in 2024.\n" +
+        "We wear the white clothing, which is crafted and inspired in the same way as the canvas. Similar to the canvas, we intuitively manipulate these with spray paint, paint, and markers. Filling the emptiness with gestures that symbolize the internal screams.\n",
+    caption3: "This performance has been captured on film, grasping the atmosphere by portraying fragments of suppressed thoughts. These resurface as text on screen and audio.",
+    screening: "click here for images of the screening of Melancholy Archive",
+    creditsSound: "sound (selby wall & ptolomaea)"
+  },
+  screening: {
+    caption: "screening and exposition of melancholy archive",
+    date: "22 march 2024 at former pieter baan centre utrecht"
+  },
+  doek: {
+    caption: "canvas 3x6 meter",
+    illustratie: "illustration",
+    tekst: "text"
+  },
+  cc: {
+    caption: "i.e. patchwork jeans, sketchbook jeans"
+  }
 };

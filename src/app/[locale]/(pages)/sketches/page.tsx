@@ -8,7 +8,7 @@ import { useWindowSize } from "@/lib/hooks/useWindowsize";
 const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
-  const smallScreen = windowSize.width! < 700;
+  const smallScreen = windowSize.width! < 800;
 
   return (
     <div
