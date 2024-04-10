@@ -7,6 +7,7 @@ export default {
     mies: "mies raadgever",
     neeltje: "neeltje de jong",
     mi_ne: "mies raadgever & neeltje de jong",
+    aanvraag: "beschikbaar op aanvraag",
   },
   about: {
     paragraph1:
@@ -27,7 +28,7 @@ export default {
     neeltjeParagraph2:
       "‘Mijn werk gaat veel over beweging. Beweging van lichamen, beweging in ritueel, beweging door verhaal. Ik leer diep door lichaam in plaats van geest. Keer op keer bewegen, totdat het diep in mijn wezen geworteld raakt; een belichaamde praktijk.’",
     neeltjeParagraph3:
-      "De verhalen die hier uit ontstaan vertaal ik naar kunst rondom het lichaam. Daar waar het begon. De esthetiek en tactiliteit van mijn werk is belangrijk voor mij omdat het het gevoel vertaalt van het verhaal dat ik wil vertellen. Video is een medium waar ik graag alle aspecten in samenbreng, hierin voel ik dat ik het beste mijn gedachtestroom kan vangen en overbrengen.",
+      "De verhalen die hier uit ontstaan vertaal ik naar kunst rondom en reflecterend op het lichaam. Daar waar het begon. De esthetiek en tactiliteit van mijn werk is belangrijk voor mij omdat het het gevoel vertaalt van het verhaal dat ik wil vertellen. Video is een medium waar ik graag alle aspecten in samenbreng, hierin voel ik dat ik het beste mijn gedachtestroom kan vangen en overbrengen.",
     neeltjeParagraph4:
       "‘Ik geniet ervan om verhalen te vertellen. Om uitdrukking te geven aan het mythische, het ongedefinieerde, het vage, het onsamenhangende, het amorfe, het rauwe, het trieste en het kleine.'",
     neeltjeVertoning1:
@@ -89,21 +90,24 @@ export default {
     model: "modellen",
     loek: "loek hennipman, martinus papilaja & niels matitawaer",
   },
-  angel: {
-    caption: "sadgirlwearables:",
-    subcaption: "tule jurk & broek met bedrukkingen van bleek",
-  },
-  sorrow: {
-    caption: "vrije expressie: top en rok",
-    top: "top in samenwerking met",
-    rok: "rok in samenwerking met",
+  garments: {
+    caption: "klik op de foto's voor meer informatie en beelden van de ontwerpen",
+    angel: "tule jurk & broek met bedrukkingen van bleek",
+    top: "uit de vrije hand gebreide top in samenwerking met",
+    rok: "vrije expressie rok in samenwerking met",
     alex: "alexandra polakova",
     niels: "niels matitawaer",
+    maybe: "cropped hoodie in samenwerking met",
+    chloe: "chloé pérès-labourdette",
+    torn: "dubbellaags gescheurde jeans",
+    pretty: "jurk van vintage zijde",
+    lace: "rok samengesteld uit kanten lapjes, met zeeschelp detail",
+    she: "jurk gemaakt voor de korte film ",
+    she1: "'she of the water'",
   },
   nwaad: {
     caption: "installatie in opdracht van NWAA documentaire",
-    credits:
-      "pepijn van de grift, lieke steen, mies raadgever & neeltje de jong",
+    credits: "pepijn van de grift, lieke steen, mies raadgever & neeltje de jong",
     tech: "technische ondersteuning",
     bart: "bart kipping",
   },
@@ -111,20 +115,6 @@ export default {
     caption: "exploratie van tekenkunst en haar relatie met het lichaam",
     model: "model",
     helen: "helen cheng",
-  },
-  maybe: {
-    caption: "sadgirlwearables:",
-    subcaption: "cropped hoodie",
-    collab: "in samenwerking met",
-    chloe: "chloé pérès-labourdette",
-  },
-  torn: {
-    caption: "sadgirlwearables:",
-    subcaption: "dubbellaags gescheurde jeans",
-  },
-  girl: {
-    caption: "sadgirlwearables:",
-    subcaption: "jurk van vintage zijde",
   },
   embody: {
     caption: "multi visuele installatie",
@@ -156,4 +146,41 @@ export default {
   tattoos: {
     caption: "stick and poke tattoos",
   },
+  thoughts: {
+    caption: "muur van gedachten",
+    klik: "klik op de foto om de hd versie te bekijken",
+    caption1: "uittreksels notitieboek van",
+    caption2 : "als aanloop op ‘she of the water’",
+  },
+  she: {
+    caption: "‘she of the water’ is een korte film",
+    subcaption: "het is een verhaal over verwerking, het terugkomen in je lichaam, waarbij tactiliteit van het water en de handeling van het vlechten een grote rol spelen",
+    subcaption1: "de film is de visuele uitwerking van teksten die ik schreef tijdens mijn master Practice Held in Common, ArtEZ",
+    subcaption2: "de teksten fungeren als subliminals [lyrics] aan de film, waarbij de kijker zelf kan aanvoelen wanneer en of die de teksten zal lezen",
+    subcaption3: "‘she of the water’ maakte deel uit van de groepstentoonstelling 'Hello world' in de Historische kelders, Rozet Arnhem, juni 2022",
+    link: "bekijk een fragment van de film hier",
+    linkboekje: "zie de gebrande dvd uitgave met cd boekje hier",
+  },
+  boekje: {
+   caption: "‘she of the water’ is uitgebracht in eenmalige kleine oplage op gebrande dvd, inclusief cd boekje van de originele teksten",
+  },
+  ciggies:{
+    caption: "eerste versie gemaakt in 2022",
+    subcaption: "kraal sigaretjes in tule zakje met een kruis van gedroogde bloemen, gemaakt in januari 2024 ter gelegenheid van duo expositie te HOEK Nijverheid",
+  },
+  kerkraam:{
+    caption: "serie van kerkraam lijstjes",
+    subcaption: "gemaakt door middel van glas snijden en solderen",
+    text: "originele teksten van",
+  },
+  spiegels: {
+    caption: "spiegelformaties aan elkaar gesoldeerd",
+  },
+  body: {
+   buik: "buikketting, diverse ontwerpen",
+   adorn: "jarretel van kralen",
+   choker: "halsketting met parel",
+   bloem: "kralen bloempjes, om in te vlechten",
+  }
+
 };

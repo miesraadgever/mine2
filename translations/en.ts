@@ -7,6 +7,7 @@ export default {
     mies: "mies raadgever",
     neeltje: "neeltje de jong",
     mi_ne: "mies raadgever & neeltje de jong",
+    aanvraag: "available upon request",
   },
   about: {
     paragraph1:
@@ -27,7 +28,7 @@ export default {
     neeltjeParagraph2:
       "`My work revolves around movement. Movement of bodies, movement in ritual, movement through story. I learn deeply through the body rather than the mind. Repeatedly moving until it is deeply rooted in my being; an embodied practice.`",
     neeltjeParagraph3:
-      "The stories that emerge from this, I translate into art around the body. Where it all began.The aesthetics and tactility of my work are important to me because they translate the feeling of the story I want to convey. Video is a medium where I like to bring all aspects together; I feel it is the best way to capture and convey my stream of thoughts.",
+      "The stories that emerge from this, I translate into art surrounding and reflecting on the body. Where it all began.The aesthetics and tactility of my work are important to me because they translate the feeling of the story I want to convey. Video is a medium where I like to bring all aspects together; I feel it is the best way to capture and convey my stream of thoughts.",
     neeltjeParagraph4:
       "`I enjoy telling stories. To express the mythical, the undefined, the vague, the incoherent, the amorphous, the raw, the sad, and the small.`",
     neeltjeVertoning1:
@@ -57,7 +58,7 @@ export default {
   florilegium: {
     caption:
       "florilegium is the literary term for a collection of excerpts from poetry or prose",
-    subcaption: "texts extracted from the album ‘blonde’ of frank ocean",
+    subcaption: "texts extracted from the album ‘blonde’ by frank ocean",
   },
   wearables: {
     caption: "several handmade jewelry",
@@ -90,16 +91,20 @@ export default {
     model: "models",
     loek: "loek hennipman, martinus papilaja & niels matitawaer",
   },
-  angel: {
-    caption: "sadgirlwearables:",
-    subcaption: "tule dress & pants with bleach drawings",
-  },
-  sorrow: {
-    caption: "free expression: top and skirt",
-    top: "top in collaboration with",
-    rok: "rok in collaboration with",
+  garments: {
+    caption: "select one of the photos for more information and images of the designs",
+    angel: "tule dress & pants with bleach drawings",
+    top: "freehand knitted top in collaboration with",
+    rok: "free expression skirt in collaboration with",
     alex: "alexandra polakova",
     niels: "niels matitawaer",
+    maybe: "cropped hoodie in collaboration with",
+    chloe: "chloé pérès-labourdette",
+    torn: "double-layered ripped jeans",
+    pretty: "dress made out of vintage silk",
+    lace: "lace composition skirt, with seashell detail ",
+    she: "dress made for the short film",
+    she1: "'she of the water'",
   },
   nwaad: {
     caption: "installation commissioned by NWAA documentaire",
@@ -113,20 +118,6 @@ export default {
       "exploration of symbolic drawings and their connection to the body",
     model: "model",
     helen: "helen cheng",
-  },
-  maybe: {
-    caption: "sadgirlwearables:",
-    subcaption: "cropped hoodie",
-    collab: "in collaboration with",
-    chloe: "chloé pérès-labourdette",
-  },
-  torn: {
-    caption: "sadgirlwearables:",
-    subcaption: "double-layered ripped jeans",
-  },
-  girl: {
-    caption: "sadgirlwearables:",
-    subcaption: "dress made out of vintage silk",
   },
   embody: {
     caption: "multi-visual installation",
@@ -158,4 +149,41 @@ export default {
   tattoos: {
     caption: "stick and poke tattoos",
   },
+  thoughts: {
+    caption: "wall filled with thoughts",
+    klik: "select the picture to see the hd version",
+    caption1: "excerpts of the notebook from",
+    caption2 : "as a prelude to ‘she of the water’",
+  },
+  she: {
+    caption: "‘she of the water’ a short film",
+    subcaption: "it is a story about processing, returning to ones body, in which the tactility of the water and the act of braiding play a major role",
+    subcaption1: "the film is the visual elaboration of texts I wrote during my fine arts master’s Practice Held in Common, ArtEZ",
+    subcaption2: "the texts function as subliminals [lyrics] to the film, allowing the viewer to sense when and if they will read them",
+    subcaption3: "‘she of the water’ was part of the group exhibition “Hello world” in the Historische kelders, Rozet Arnhem, June 2022",
+    link: "click here to view a fragment of the film",
+    linkboekje: "click here for the burned dvd and booklet",
+  },
+   boekje: {
+    caption: "‘she of the water’ was released in a one-time limited quantity on burned DVD, including a CD booklet with original texts",
+   },
+   ciggies:{
+     caption: "first set of beaded cigarettes, made in 2022",
+     subcaption: "beaded cigarettes in tule bag embroidered with a cross out of dried flowers, created in January 2024 for the duo exhibition at HOEK Nijverheid",
+   },
+   kerkraam:{
+     caption: "set of church window frames",
+     subcaption: "made by cutting glass in shape and tin soldering the edges",
+     text: "original texts by",
+   },
+   spiegels: {
+     caption: "mirror arrangements soldered together",
+   },
+   body: {
+    buik: "belly chain, various designs",
+    adorn: "suspender made from beads",
+    choker: "choker with pearl",
+    bloem: "beaded flowers, to braid into hair",
+
+   }
 };

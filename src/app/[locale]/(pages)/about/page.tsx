@@ -80,7 +80,7 @@ const Page = () => {
             plaats van geest. Keer op keer bewegen, totdat het diep in mijn
             wezen geworteld raakt; een belichaamde praktijk.’ <br />
             <br />
-            De verhalen die hier uit ontstaan vertaal ik naar kunst rondom het
+            De verhalen die hier uit ontstaan vertaal ik naar kunst rondom en reflecterend op het
             lichaam. Daar waar het begon. De esthetiek en tactiliteit van mijn
             werk is belangrijk voor mij omdat het het gevoel vertaalt van het
             verhaal dat ik wil vertellen. Video is een medium waar ik graag alle
