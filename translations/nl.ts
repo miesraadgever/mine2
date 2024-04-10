@@ -8,6 +8,8 @@ export default {
     neeltje: "neeltje de jong",
     mi_ne: "mies raadgever & neeltje de jong",
     aanvraag: "beschikbaar op aanvraag",
+    prijsaanvraag: "prijs op aanvraag"
+
   },
   about: {
     paragraph1:
@@ -190,4 +192,32 @@ export default {
     choker: "halsketting met parel",
     bloem: "kralen bloempjes, om in te vlechten",
   },
+  stageigor: {
+    caption: "stage design voor uitvoeringen van igor herder's kind aan zee",
+    caption2: "te melkweg amsterdam, roodkapje rotterdam en tivoli utrecht",
+    extracredits: "In samenwerking met"
+  },
+  melancholy: {
+    caption: "Melancholy Archive, ontstaan uit intuïtief schilderen op doek in 2021, weeft verschillende elementen samen.\n" ,
+    caption2: "De tekst, als een geschreeuw in de achtergrond, bevind zich achter de belichaming van de leegte. Gevangen in gedachten en verwachtingen verbeeld dit de dualiteit van vrouwelijke agressie.\n" +
+        "Melancholy Archive is niet slechts een momentopname, maar een deel van een groter geheel. Het doek vertaalde zich naar een performance, uitgevoerd door Mies en Neeltje in 2024\n" +
+        "\n" +
+        "De witte kleding geïnspireerd en gemaakt op dezelfde manier als het doek, dragen wij nu. Zoals het doek bewerken we deze intuïtief met spraypaint, verf en markers. De leegte opvullend met handelingen die het interne geschreeuw verbeelden.\n" +
+        "\n",
+    caption3: "Deze performance is vastgelegd op film wat de sfeer vangt van flarden onderdrukte gedachtes, terugkomend als tekst op beeld en audio.\n",
+    screening: "klik hier voor beelden van de screening van Melancholy Archive op 22 maart",
+    creditsSound: "muziek (selby wall & ptolomaea)"
+  },
+  screening: {
+    caption: "screening en expositie van melancholy archive",
+    date: "22 maart 2024 te voormalig pieter baan centrum utrecht"
+  },
+  doek: {
+    caption: "canvas 3x6 meter",
+    illustratie: "illustratie",
+    tekst: "tekst"
+  },
+  cc: {
+    caption: "i.e. patchwork jeans, sketchbook jeans"
+  }
 };
