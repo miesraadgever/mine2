@@ -91,7 +91,8 @@ export default {
     loek: "loek hennipman, martinus papilaja & niels matitawaer",
   },
   garments: {
-    caption: "klik op de foto's voor meer informatie en beelden van de ontwerpen",
+    caption:
+      "klik op de foto's voor meer informatie en beelden van de ontwerpen",
     angel: "tule jurk & broek met bedrukkingen van bleek",
     top: "uit de vrije hand gebreide top in samenwerking met",
     rok: "vrije expressie rok in samenwerking met",
@@ -107,7 +108,8 @@ export default {
   },
   nwaad: {
     caption: "installatie in opdracht van NWAA documentaire",
-    credits: "pepijn van de grift, lieke steen, mies raadgever & neeltje de jong",
+    credits:
+      "pepijn van de grift, lieke steen, mies raadgever & neeltje de jong",
     tech: "technische ondersteuning",
     bart: "bart kipping",
   },
@@ -150,25 +152,31 @@ export default {
     caption: "muur van gedachten",
     klik: "klik op de foto om de hd versie te bekijken",
     caption1: "uittreksels notitieboek van",
-    caption2 : "als aanloop op ‘she of the water’",
+    caption2: "als aanloop op ‘she of the water’",
   },
   she: {
     caption: "‘she of the water’ is een korte film",
-    subcaption: "het is een verhaal over verwerking, het terugkomen in je lichaam, waarbij tactiliteit van het water en de handeling van het vlechten een grote rol spelen",
-    subcaption1: "de film is de visuele uitwerking van teksten die ik schreef tijdens mijn master Practice Held in Common, ArtEZ",
-    subcaption2: "de teksten fungeren als subliminals [lyrics] aan de film, waarbij de kijker zelf kan aanvoelen wanneer en of die de teksten zal lezen",
-    subcaption3: "‘she of the water’ maakte deel uit van de groepstentoonstelling 'Hello world' in de Historische kelders, Rozet Arnhem, juni 2022",
+    subcaption:
+      "het is een verhaal over verwerking, het terugkomen in je lichaam, waarbij tactiliteit van het water en de handeling van het vlechten een grote rol spelen",
+    subcaption1:
+      "de film is de visuele uitwerking van teksten die ik schreef tijdens mijn master Practice Held in Common, ArtEZ",
+    subcaption2:
+      "de teksten fungeren als subliminals [lyrics] aan de film, waarbij de kijker zelf kan aanvoelen wanneer en of die de teksten zal lezen",
+    subcaption3:
+      "‘she of the water’ maakte deel uit van de groepstentoonstelling 'Hello world' in de Historische kelders, Rozet Arnhem, juni 2022",
     link: "bekijk een fragment van de film hier",
     linkboekje: "zie de gebrande dvd uitgave met cd boekje hier",
   },
   boekje: {
-   caption: "‘she of the water’ is uitgebracht in eenmalige kleine oplage op gebrande dvd, inclusief cd boekje van de originele teksten",
+    caption:
+      "‘she of the water’ is uitgebracht in eenmalige kleine oplage op gebrande dvd, inclusief cd boekje van de originele teksten",
   },
-  ciggies:{
+  ciggies: {
     caption: "eerste versie gemaakt in 2022",
-    subcaption: "kraal sigaretjes in tule zakje met een kruis van gedroogde bloemen, gemaakt in januari 2024 ter gelegenheid van duo expositie te HOEK Nijverheid",
+    subcaption:
+      "kraal sigaretjes in tule zakje met een kruis van gedroogde bloemen, gemaakt in januari 2024 ter gelegenheid van duo expositie te HOEK Nijverheid",
   },
-  kerkraam:{
+  kerkraam: {
     caption: "serie van kerkraam lijstjes",
     subcaption: "gemaakt door middel van glas snijden en solderen",
     text: "originele teksten van",
@@ -177,10 +185,9 @@ export default {
     caption: "spiegelformaties aan elkaar gesoldeerd",
   },
   body: {
-   buik: "buikketting, diverse ontwerpen",
-   adorn: "jarretel van kralen",
-   choker: "halsketting met parel",
-   bloem: "kralen bloempjes, om in te vlechten",
-  }
-
+    buik: "buikketting, diverse ontwerpen",
+    adorn: "jarretel van kralen",
+    choker: "halsketting met parel",
+    bloem: "kralen bloempjes, om in te vlechten",
+  },
 };

@@ -4,11 +4,10 @@ import React from "react";
 import Image from "next/image";
 import { useI18n } from "../../../../../translations/client";
 import definitie from "../../../../../public/mi_nedefinitie.jpg";
-import {useWindowSize} from "@/lib/hooks/useWindowsize";
+import { useWindowSize } from "@/lib/hooks/useWindowsize";
 
 const Page = () => {
   const t = useI18n();
-
 
   return (
     <>
@@ -80,12 +79,12 @@ const Page = () => {
             plaats van geest. Keer op keer bewegen, totdat het diep in mijn
             wezen geworteld raakt; een belichaamde praktijk.’ <br />
             <br />
-            De verhalen die hier uit ontstaan vertaal ik naar kunst rondom en reflecterend op het
-            lichaam. Daar waar het begon. De esthetiek en tactiliteit van mijn
-            werk is belangrijk voor mij omdat het het gevoel vertaalt van het
-            verhaal dat ik wil vertellen. Video is een medium waar ik graag alle
-            aspecten in samenbreng, hierin voel ik dat ik het beste mijn
-            gedachtestroom kan vangen en overbrengen. <br />
+            De verhalen die hier uit ontstaan vertaal ik naar kunst rondom en
+            reflecterend op het lichaam. Daar waar het begon. De esthetiek en
+            tactiliteit van mijn werk is belangrijk voor mij omdat het het
+            gevoel vertaalt van het verhaal dat ik wil vertellen. Video is een
+            medium waar ik graag alle aspecten in samenbreng, hierin voel ik dat
+            ik het beste mijn gedachtestroom kan vangen en overbrengen. <br />
             <br />
             Ik geniet ervan om verhalen te vertellen. Om uitdrukking te geven
             aan het mythische, het ongedefinieerde, het vage, het
@@ -151,8 +150,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-   </>
-
+    </>
   );
 };
 

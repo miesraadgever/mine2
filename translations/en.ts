@@ -92,7 +92,8 @@ export default {
     loek: "loek hennipman, martinus papilaja & niels matitawaer",
   },
   garments: {
-    caption: "select one of the photos for more information and images of the designs",
+    caption:
+      "select one of the photos for more information and images of the designs",
     angel: "tule dress & pants with bleach drawings",
     top: "freehand knitted top in collaboration with",
     rok: "free expression skirt in collaboration with",
@@ -153,37 +154,42 @@ export default {
     caption: "wall filled with thoughts",
     klik: "select the picture to see the hd version",
     caption1: "excerpts of the notebook from",
-    caption2 : "as a prelude to ‘she of the water’",
+    caption2: "as a prelude to ‘she of the water’",
   },
   she: {
     caption: "‘she of the water’ a short film",
-    subcaption: "it is a story about processing, returning to ones body, in which the tactility of the water and the act of braiding play a major role",
-    subcaption1: "the film is the visual elaboration of texts I wrote during my fine arts master’s Practice Held in Common, ArtEZ",
-    subcaption2: "the texts function as subliminals [lyrics] to the film, allowing the viewer to sense when and if they will read them",
-    subcaption3: "‘she of the water’ was part of the group exhibition “Hello world” in the Historische kelders, Rozet Arnhem, June 2022",
+    subcaption:
+      "it is a story about processing, returning to ones body, in which the tactility of the water and the act of braiding play a major role",
+    subcaption1:
+      "the film is the visual elaboration of texts I wrote during my fine arts master’s Practice Held in Common, ArtEZ",
+    subcaption2:
+      "the texts function as subliminals [lyrics] to the film, allowing the viewer to sense when and if they will read them",
+    subcaption3:
+      "‘she of the water’ was part of the group exhibition “Hello world” in the Historische kelders, Rozet Arnhem, June 2022",
     link: "click here to view a fragment of the film",
     linkboekje: "click here for the burned dvd and booklet",
   },
-   boekje: {
-    caption: "‘she of the water’ was released in a one-time limited quantity on burned DVD, including a CD booklet with original texts",
-   },
-   ciggies:{
-     caption: "first set of beaded cigarettes, made in 2022",
-     subcaption: "beaded cigarettes in tule bag embroidered with a cross out of dried flowers, created in January 2024 for the duo exhibition at HOEK Nijverheid",
-   },
-   kerkraam:{
-     caption: "set of church window frames",
-     subcaption: "made by cutting glass in shape and tin soldering the edges",
-     text: "original texts by",
-   },
-   spiegels: {
-     caption: "mirror arrangements soldered together",
-   },
-   body: {
+  boekje: {
+    caption:
+      "‘she of the water’ was released in a one-time limited quantity on burned DVD, including a CD booklet with original texts",
+  },
+  ciggies: {
+    caption: "first set of beaded cigarettes, made in 2022",
+    subcaption:
+      "beaded cigarettes in tule bag embroidered with a cross out of dried flowers, created in January 2024 for the duo exhibition at HOEK Nijverheid",
+  },
+  kerkraam: {
+    caption: "set of church window frames",
+    subcaption: "made by cutting glass in shape and tin soldering the edges",
+    text: "original texts by",
+  },
+  spiegels: {
+    caption: "mirror arrangements soldered together",
+  },
+  body: {
     buik: "belly chain, various designs",
     adorn: "suspender made from beads",
     choker: "choker with pearl",
     bloem: "beaded flowers, to braid into hair",
-
-   }
+  },
 };

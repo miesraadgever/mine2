@@ -4,7 +4,7 @@ import React from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
-import {CldImage} from "next-cloudinary";
+import { CldImage } from "next-cloudinary";
 
 const Page = () => {
   const t = useI18n();
@@ -12,12 +12,12 @@ const Page = () => {
   const smallScreen = windowSize.width! < 800;
 
   return (
-      <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
-        <div className={`flex flex-col ${smallScreen ? "col-12" : "col-6"}`}>
-          {/* Text */}
-          <div className={`${smallScreen ? "ml-2 mb-4" : "p-6 mb-4"} `}>
-            <h3 className="font-medium text-xl">DROOM ARCHIEF</h3>
-            <p className="mt-3">
+    <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
+      <div className={`flex flex-col ${smallScreen ? "col-12" : "col-6"}`}>
+        {/* Text */}
+        <div className={`${smallScreen ? "ml-2 mb-4" : "p-6 mb-4"} `}>
+          <h3 className="font-medium text-xl">DROOM ARCHIEF</h3>
+          <p className="mt-3">
             {t("droom.caption")}
             <br />
             {t("droom.materiaal")}
@@ -27,54 +27,66 @@ const Page = () => {
             <br />
             <br />
             <i>2.2018</i>
-            </p>
-          </div>
-          {/* Grote afbeelding rechts  */}
-          {smallScreen && (
-              <div className={"col-12 justify-center flex"}>
-                <div className="flex ">
-                  <Image
-                      src={"https://res.cloudinary.com/dwgsproch/image/upload/v1711717873/2%20NEELTJE%202018%202%20-%20droom%20archief/2.111_bsz7ot.jpg"}
-                      alt={"droom1"}
-                      width={600}
-                      height={700}
-                  />
-                </div>
-              </div>
-          )}
-          {/* Videos */}
-          <div className={`flex-wrap flex gap-2 mt-10 ${smallScreen ? " justify-center" : "ml-6 justify-start"}`}>
-            <video className={""} width="220" height="200" loop muted autoPlay>
-              <source
-                src={"https://res.cloudinary.com/dwgsproch/video/upload/v1709925368/2%20NEELTJE%202018%202%20-%20droom%20archief/1.mp4" }
-              ></source>
-            </video>
-            <video className={""} width="220" height="200" loop muted autoPlay>
-              <source
-                src={"https://res.cloudinary.com/dwgsproch/video/upload/v1709925368/2%20NEELTJE%202018%202%20-%20droom%20archief/2.mp4"}
-              ></source>
-            </video>
-            <video className={""} width="220" height="200" loop muted autoPlay>
-              <source
-                src={"https://res.cloudinary.com/dwgsproch/video/upload/v1709925368/2%20NEELTJE%202018%202%20-%20droom%20archief/3.mp4"}
-              ></source>
-            </video>
-          </div>
+          </p>
         </div>
         {/* Grote afbeelding rechts  */}
-        {!smallScreen && (
-            <div className={`fixed right-0 justify-end flex col-6`}>
-              <div className="flex ">
-                  <Image
-                      src={"https://res.cloudinary.com/dwgsproch/image/upload/v1711717873/2%20NEELTJE%202018%202%20-%20droom%20archief/2.111_bsz7ot.jpg"}
-                      alt={"droom1"}
-                      width={600}
-                      height={700}
-                  />
-                </div>
+        {smallScreen && (
+          <div className={"col-12 justify-center flex"}>
+            <div className="flex ">
+              <Image
+                src={
+                  "https://res.cloudinary.com/dwgsproch/image/upload/v1711717873/2%20NEELTJE%202018%202%20-%20droom%20archief/2.111_bsz7ot.jpg"
+                }
+                alt={"droom1"}
+                width={600}
+                height={700}
+              />
             </div>
+          </div>
         )}
+        {/* Videos */}
+        <div
+          className={`flex-wrap flex gap-2 mt-10 ${smallScreen ? " justify-center" : "ml-6 justify-start"}`}
+        >
+          <video className={""} width="220" height="200" loop muted autoPlay>
+            <source
+              src={
+                "https://res.cloudinary.com/dwgsproch/video/upload/v1709925368/2%20NEELTJE%202018%202%20-%20droom%20archief/1.mp4"
+              }
+            ></source>
+          </video>
+          <video className={""} width="220" height="200" loop muted autoPlay>
+            <source
+              src={
+                "https://res.cloudinary.com/dwgsproch/video/upload/v1709925368/2%20NEELTJE%202018%202%20-%20droom%20archief/2.mp4"
+              }
+            ></source>
+          </video>
+          <video className={""} width="220" height="200" loop muted autoPlay>
+            <source
+              src={
+                "https://res.cloudinary.com/dwgsproch/video/upload/v1709925368/2%20NEELTJE%202018%202%20-%20droom%20archief/3.mp4"
+              }
+            ></source>
+          </video>
+        </div>
       </div>
+      {/* Grote afbeelding rechts  */}
+      {!smallScreen && (
+        <div className={`fixed right-0 justify-end flex col-6`}>
+          <div className="flex ">
+            <Image
+              src={
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1711717873/2%20NEELTJE%202018%202%20-%20droom%20archief/2.111_bsz7ot.jpg"
+              }
+              alt={"droom1"}
+              width={600}
+              height={700}
+            />
+          </div>
+        </div>
+      )}
+    </div>
   );
 };
 
