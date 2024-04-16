@@ -1,16 +1,23 @@
 "use client";
 
-import React from "react";
+import React, {useState} from "react";
 import { useI18n } from "../../../../../translations/client";
-import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import {CldImage} from "next-cloudinary";
 import Link from "next/link";
+import ImagePopUp from "@/components/ImagePopUp";
 
 const Page = () => {
     const t = useI18n();
     const windowSize = useWindowSize();
     const smallScreen = windowSize.width! < 800;
+    const [imageUrl, setImageUrl] = useState("")
+    const [show, setShow] = useState(false)
+
+    const showModal = (url: string) => {
+        setImageUrl(url)
+        setShow(true)
+    }
 
     return (
         <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -61,7 +68,7 @@ const Page = () => {
                             width={500}
                             height={600}
                             className={"object-cover w-72 h-72"}
-
+                            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712251880/MI_NE%20-%20MELANCHOLY%20ARCHIVE/IMG_4265_lh0rzd.jpg")}
                         />
                     </div>
                     <div className="">
@@ -73,7 +80,7 @@ const Page = () => {
                             width={500}
                             height={600}
                             className={"object-cover w-72 h-72"}
-
+                            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712252870/MI_NE%20-%20MELANCHOLY%20ARCHIVE/IMG_4311_zizr9r.jpg")}
                         />
                     </div>
                     <div className="">
@@ -85,7 +92,7 @@ const Page = () => {
                             width={500}
                             height={600}
                             className={"object-cover w-72 h-72"}
-
+                            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712251885/MI_NE%20-%20MELANCHOLY%20ARCHIVE/IMG_4346_mjh6ge.jpg")}
                         />
                     </div>
                     <div className="">
@@ -97,6 +104,7 @@ const Page = () => {
                             width={500}
                             height={600}
                             className={"object-cover w-72 h-72"}
+                            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712251884/MI_NE%20-%20MELANCHOLY%20ARCHIVE/IMG_4336_cunskt.jpg")}
                         />
                     </div>
                 </div>
@@ -110,6 +118,7 @@ const Page = () => {
                             referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </div>
             )}
+            <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
         </div>
     );
 };
