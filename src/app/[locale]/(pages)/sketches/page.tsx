@@ -67,6 +67,7 @@ const Page = () => {
           alt={"book1"}
           width={300}
           height={400}
+          onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710078917/MIES%20-%20SKETCHES/25-03-2_m5bycr.jpg")}
         />
         <Image
           src={
@@ -75,6 +76,7 @@ const Page = () => {
           alt={"book1"}
           width={300}
           height={400}
+          onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710078914/MIES%20-%20SKETCHES/Untitled_3_shdf6b.jpg")}
         />
       </div>
       <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
