@@ -24,7 +24,7 @@ export default {
     miesParagraph3:
       "Door analoog werk te vermengen met de mogelijkheden van digitale media, vertel ik mijn verhaal in een eigen handschrift. Mijn werk is figuratief maar de boodschap kan abstract zijn. Hierdoor laat ik veel ruimte over voor eigen interpretatie. De toeschouwer kan ieder een andere en persoonlijke boodschap uit het werk halen",
     miesParagraph4:
-      "‘Ik werk graag samen of in opdracht van anderen. Samen creëren is voor mij belangrijk. Door meerdere disciplines en visies samen te brengen komt er een werk uit wat op meerdere facetten interessant kan zijn.'",
+      "Ik werk graag samen of in opdracht van anderen. Samen creëren is voor mij belangrijk. Door meerdere disciplines en visies samen te brengen komt er een werk uit wat op meerdere facetten interessant kan zijn.'",
     neeltjeParagraph1:
       "Neeltje werkt als autonoom beeldend kunstenaar met een achtergrond in dans, textiel en modeontwerp. Haar melancholisch-poëtische handschrift is te herkennen in haar verschillende uitingsvormen.",
     neeltjeParagraph2:
@@ -44,6 +44,8 @@ export default {
     neeltjeVertoning5:
       "Expositie ‘blaadjesromance’ en ‘droom archief', Nijverheid, Utrecht, 2018",
     neeltjeVertoning6: "Mode collectie ‘shanti’, Wilminktheater Enschede, 2016",
+    neeltjeVertoning7: "Duo-expositie HOEK, Nijverheid Utrecht, 2024",
+    mineVertoning1: "Screening Melancholy Archive, Voormalig Pieter Baan Centrum Utrecht, 2024",
   },
   audio: {
     caption: "onderzoek in geluid",
@@ -200,13 +202,13 @@ export default {
   melancholy: {
     caption: "Melancholy Archive, ontstaan uit intuïtief schilderen op doek in 2021, weeft verschillende elementen samen.\n" ,
     caption2: "De tekst, als een geschreeuw in de achtergrond, bevind zich achter de belichaming van de leegte. Gevangen in gedachten en verwachtingen verbeeld dit de dualiteit van vrouwelijke agressie.\n" +
-        "Melancholy Archive is niet slechts een momentopname, maar een deel van een groter geheel. Het doek vertaalde zich naar een performance, uitgevoerd door Mies en Neeltje in 2024\n" +
+        "Melancholy Archive is niet slechts een momentopname, maar een deel van een groter geheel. Het doek vertaalde zich naar een performance, uitgevoerd door Mies en Neeltje in 2024.\n" +
         "\n" +
         "De witte kleding geïnspireerd en gemaakt op dezelfde manier als het doek, dragen wij nu. Zoals het doek bewerken we deze intuïtief met spraypaint, verf en markers. De leegte opvullend met handelingen die het interne geschreeuw verbeelden.\n" +
         "\n",
     caption3: "Deze performance is vastgelegd op film wat de sfeer vangt van flarden onderdrukte gedachtes, terugkomend als tekst op beeld en audio.\n",
     screening: "klik hier voor beelden van de screening van Melancholy Archive op 22 maart",
-    creditsSound: "muziek (selby wall & ptolomaea)"
+    creditsSound: "muziek (selby wall & ptolemaea)"
   },
   screening: {
     caption: "screening en expositie van melancholy archive",

@@ -1,15 +1,25 @@
 "use client";
 
-import React from "react";
+import React,{useState} from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import { CldImage } from "next-cloudinary";
+import ImagePopUp from "@/components/ImagePopUp";
+
 
 const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
+  const [imageUrl, setImageUrl] = useState("")
+  const [show, setShow] = useState(false)
+
+  const showModal = (url: string) => {
+    setImageUrl(url)
+    setShow(true)
+  }
+
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -54,6 +64,8 @@ const Page = () => {
               alt={"flor1"}
               width={300}
               height={450}
+              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1709926730/4%20NEELTJE%202020%201%20-%20florilegium%20blonde/Naamloos_2_oodb4v.jpg")}
+
             />
           </div>
           <div className="">
@@ -64,6 +76,8 @@ const Page = () => {
               alt={"flor2"}
               width={300}
               height={450}
+              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1709926736/4%20NEELTJE%202020%201%20-%20florilegium%20blonde/Naamloos_7_hefoxw.jpg")}
+
             />
           </div>
           <div className="">
@@ -74,6 +88,8 @@ const Page = () => {
               alt={"flor3"}
               width={300}
               height={450}
+              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1709926485/4%20NEELTJE%202020%201%20-%20florilegium%20blonde/Naamloos_8_hiey10.jpg")}
+
             />
           </div>
           <div className="">
@@ -84,6 +100,8 @@ const Page = () => {
               alt={"flor4"}
               width={300}
               height={450}
+              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1709926726/4%20NEELTJE%202020%201%20-%20florilegium%20blonde/Naamloos_9_yqhbrm.jpg")}
+
             />
           </div>
           <div className="">
@@ -94,6 +112,8 @@ const Page = () => {
               alt={"flor5"}
               width={300}
               height={450}
+              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1709926485/4%20NEELTJE%202020%201%20-%20florilegium%20blonde/Naamloos_12_npafka.jpg")}
+
             />
           </div>
           <div className="">
@@ -104,6 +124,8 @@ const Page = () => {
               alt={"flor6"}
               width={300}
               height={450}
+              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710689882/4%20NEELTJE%202020%201%20-%20florilegium%20blonde/Naamloos_3_j0mtpc.jpg")}
+
             />
           </div>
         </div>
@@ -120,6 +142,7 @@ const Page = () => {
           />
         </div>
       )}
+            <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
     </div>
   );
 };

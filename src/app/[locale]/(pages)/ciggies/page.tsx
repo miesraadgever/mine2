@@ -1,15 +1,23 @@
 "use client";
 
-import React from "react";
+import React,{useState} from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import { CldImage } from "next-cloudinary";
+import ImagePopUp from "@/components/ImagePopUp";
 
 const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
+  const [imageUrl, setImageUrl] = useState("")
+  const [show, setShow] = useState(false)
+
+  const showModal = (url: string) => {
+    setImageUrl(url)
+    setShow(true)
+  }
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -56,6 +64,8 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-80 object-cover"
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712326364/NEELTJE%20-%20ciggies/2022-12-28_16.58.03_tvi5e8.jpg")}
+
           />
           <CldImage
             src={
@@ -65,6 +75,8 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-80 object-cover"
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712235824/NEELTJE%20-%20ciggies/image00003_amwubr.jpg")}
+
           />
           <CldImage
             src={
@@ -74,6 +86,8 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-80 object-cover"
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712235790/NEELTJE%20-%20ciggies/image00122_mfstb9.jpg")}
+
           />
           <CldImage
             src={
@@ -83,6 +97,8 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-80 object-cover"
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712235373/NEELTJE%20-%20ciggies/2022-11-19_14.09.55_neum4v.jpg")}
+
           />
         </div>
       </div>
@@ -99,6 +115,7 @@ const Page = () => {
           />
         </div>
       )}
+            <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
     </div>
   );
 };

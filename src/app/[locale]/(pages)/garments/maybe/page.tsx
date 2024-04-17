@@ -1,15 +1,23 @@
 "use client";
 
-import React from "react";
+import React,{useState} from "react";
 import { useI18n } from "../../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import { CldImage } from "next-cloudinary";
+import ImagePopUp from "@/components/ImagePopUp";
 
 const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
+  const [imageUrl, setImageUrl] = useState("")
+  const [show, setShow] = useState(false)
+
+  const showModal = (url: string) => {
+    setImageUrl(url)
+    setShow(true)
+  }
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -52,7 +60,8 @@ const Page = () => {
             alt={"maybe2"}
             width={300}
             height={400}
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712569268/24%20NEELTJE%202021%205%20-%20torn%20maybe..%20butterfly%20hoodie%20ft%20chloe/IMG_98141_yp39ij.jpg")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712569252/24%20NEELTJE%202021%205%20-%20torn%20maybe..%20butterfly%20hoodie%20ft%20chloe/IMG_98151_n31wgv.jpg"
@@ -60,7 +69,8 @@ const Page = () => {
             alt={"maybe1"}
             width={300}
             height={400}
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712569252/24%20NEELTJE%202021%205%20-%20torn%20maybe..%20butterfly%20hoodie%20ft%20chloe/IMG_98151_n31wgv.jpg")}
+            />
         </div>
       </div>
       {/* Grote afbeelding rechts  */}
@@ -75,7 +85,8 @@ const Page = () => {
           />
         </div>
       )}
-    </div>
+          <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
+  </div>
   );
 };
 

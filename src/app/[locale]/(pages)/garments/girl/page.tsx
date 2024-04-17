@@ -1,15 +1,23 @@
 "use client";
 
-import React from "react";
+import React,{useState} from "react";
 import { useI18n } from "../../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import { CldImage } from "next-cloudinary";
+import ImagePopUp from "@/components/ImagePopUp";
 
 const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
+  const [imageUrl, setImageUrl] = useState("")
+  const [show, setShow] = useState(false)
+
+  const showModal = (url: string) => {
+    setImageUrl(url)
+    setShow(true)
+  }
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -53,6 +61,8 @@ const Page = () => {
               width={300}
               height={400}
               className="w-72 h-80 object-cover"
+              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076529/28%20NEELTJE%202021%209%20-%20prettiest%20girl%20of%20the%20party/IMG_0737_ydedw1.jpg")}
+
             />
           </div>
           <div className="">
@@ -64,6 +74,8 @@ const Page = () => {
               width={300}
               height={400}
               className="w-72 h-80 object-cover"
+              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076529/28%20NEELTJE%202021%209%20-%20prettiest%20girl%20of%20the%20party/IMG_0736_ktssep.jpg")}
+
             />
           </div>
           <div className="">
@@ -75,6 +87,8 @@ const Page = () => {
               width={300}
               height={400}
               className="w-72 h-80 object-cover"
+              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076542/28%20NEELTJE%202021%209%20-%20prettiest%20girl%20of%20the%20party/IMG_0740_cz8alh.jpg")}
+
             />
           </div>
         </div>
@@ -91,6 +105,7 @@ const Page = () => {
           />
         </div>
       )}
+            <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
     </div>
   );
 };

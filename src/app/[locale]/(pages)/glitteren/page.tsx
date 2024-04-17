@@ -1,15 +1,24 @@
 "use client";
 
-import React from "react";
+import React,{useState} from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import { CldImage } from "next-cloudinary";
+import ImagePopUp from "@/components/ImagePopUp";
+
 
 const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
+  const [imageUrl, setImageUrl] = useState("")
+  const [show, setShow] = useState(false)
+
+  const showModal = (url: string) => {
+    setImageUrl(url)
+    setShow(true)
+  }
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -56,7 +65,8 @@ const Page = () => {
               alt={"glit1"}
               width={300}
               height={400}
-            />
+              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711719585/22%20NEELTJE%202021%203%20-%20glitteren/2021-01-09_15.28.43_hb1ehz.jpg")}
+              />
           </div>
           <div className="">
             <CldImage
@@ -66,7 +76,8 @@ const Page = () => {
               alt={"glit2"}
               width={225}
               height={400}
-            />
+              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076035/22%20NEELTJE%202021%203%20-%20glitteren/2021-03-03_13.19.05_pozbau.jpg")}
+              />
           </div>
           <div className="">
             <CldImage
@@ -76,7 +87,8 @@ const Page = () => {
               alt={"glit3"}
               width={200}
               height={300}
-            />
+              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076035/22%20NEELTJE%202021%203%20-%20glitteren/2021-03-28_23.31.28_vfh0ex.jpg")}
+              />
           </div>
           <div className="">
             <CldImage
@@ -86,7 +98,8 @@ const Page = () => {
               alt={"glit4"}
               width={300}
               height={400}
-            />
+              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076038/22%20NEELTJE%202021%203%20-%20glitteren/2021-03-28_23.31.33-2_cvkhyi.jpg")}
+              />
           </div>
         </div>
       </div>
@@ -102,7 +115,8 @@ const Page = () => {
           />
         </div>
       )}
-    </div>
+      <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
+  </div>
   );
 };
 

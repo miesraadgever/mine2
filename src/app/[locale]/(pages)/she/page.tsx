@@ -1,15 +1,24 @@
 "use client";
 
-import React from "react";
+import React,{useState} from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import { CldImage } from "next-cloudinary";
+import ImagePopUp from "@/components/ImagePopUp";
+
 
 const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
+  const [imageUrl, setImageUrl] = useState("")
+  const [show, setShow] = useState(false)
+
+  const showModal = (url: string) => {
+    setImageUrl(url)
+    setShow(true)
+  }
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -71,7 +80,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711994635/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180143_bntk21.png")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1711994583/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180228_ycuqwk.png"
@@ -80,7 +90,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711994583/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180228_ycuqwk.png")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1711994572/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180247_jmdmam.png"
@@ -89,7 +100,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711994572/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180247_jmdmam.png")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1711994575/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180259_ey32rm.png"
@@ -98,7 +110,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711994575/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180259_ey32rm.png")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1711994587/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180334_facx2x.png"
@@ -107,7 +120,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711994587/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180334_facx2x.png")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1711994590/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180413_psbxsj.png"
@@ -116,7 +130,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711994590/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180413_psbxsj.png")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1711994594/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180427_e8zwxj.png"
@@ -125,7 +140,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711994594/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180427_e8zwxj.png")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1711994568/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180200_o3cbsi.png"
@@ -134,7 +150,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711994568/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180200_o3cbsi.png")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1711994597/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180441_dx9zuc.png"
@@ -143,7 +160,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711994597/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180441_dx9zuc.png")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1711994601/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180458_gigfuo.png"
@@ -152,7 +170,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711994601/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180458_gigfuo.png")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712519323/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-07_214521_ab4ter.png"
@@ -161,7 +180,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712519323/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-07_214521_ab4ter.png")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1711994608/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180606_lnncb4.png"
@@ -170,7 +190,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711994608/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180606_lnncb4.png")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712519326/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-06_164912_y0iddf.png"
@@ -179,7 +200,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712519326/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-06_164912_y0iddf.png")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1711994605/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180554_zw2orc.png"
@@ -188,7 +210,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711994605/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180554_zw2orc.png")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1711994528/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180700_k4br5o.png"
@@ -197,7 +220,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711994528/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180700_k4br5o.png")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1711994580/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180801_o3kaqu.png"
@@ -206,7 +230,8 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711994580/34%20NEELTJE%202022%206%20-%20she%20%27otw/Screenshot_2024-04-01_180801_o3kaqu.png")}
+            />
         </div>
       </div>
       {/* Grote afbeelding rechts  */}
@@ -222,7 +247,8 @@ const Page = () => {
           />
         </div>
       )}
-    </div>
+          <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
+   </div>
   );
 };
 

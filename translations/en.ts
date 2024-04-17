@@ -29,9 +29,9 @@ export default {
     neeltjeParagraph2:
       "`My work revolves around movement. Movement of bodies, movement in ritual, movement through story. I learn deeply through the body rather than the mind. Repeatedly moving until it is deeply rooted in my being; an embodied practice.`",
     neeltjeParagraph3:
-      "The stories that emerge from this, I translate into art surrounding and reflecting on the body. Where it all began.The aesthetics and tactility of my work are important to me because they translate the feeling of the story I want to convey. Video is a medium where I like to bring all aspects together; I feel it is the best way to capture and convey my stream of thoughts.",
+      "The stories that emerge from this, I translate into art surrounding and reflecting on the body. Where it all began. The aesthetics and tactility of my work are important to me because they translate the feeling of the story I want to convey. Video is a medium where I like to bring all aspects together; I feel it is the best way to capture and convey my stream of thoughts.",
     neeltjeParagraph4:
-      "`I enjoy telling stories. To express the mythical, the undefined, the vague, the incoherent, the amorphous, the raw, the sad, and the small.`",
+      "I enjoy telling stories. To express the mythical, the undefined, the vague, the incoherent, the amorphous, the raw, the sad, and the small.`",
     neeltjeVertoning1:
       "Publication and display short film SHE ‘OTW, Historische kelders Arnhem, 2022",
     neeltjeVertoning2:
@@ -44,6 +44,8 @@ export default {
       "Exposition ‘blaadjesromance’ and ‘droom archief', Nijverheid, Utrecht, 2018",
     neeltjeVertoning6:
       "Mode collection ‘shanti’, Wilminktheater Enschede, 2016",
+    neeltjeVertoning7: "Duo-exhibition HOEK, Nijverheid Utrecht, 2024",
+    mineVertoning1: "Screening Melancholy Archive, Voormalig Pieter Baan Centrum Utrecht, 2024",
   },
   audio: {
     caption: "exploration through sound",
@@ -205,7 +207,7 @@ export default {
         "We wear the white clothing, which is crafted and inspired in the same way as the canvas. Similar to the canvas, we intuitively manipulate these with spray paint, paint, and markers. Filling the emptiness with gestures that symbolize the internal screams.\n",
     caption3: "This performance has been captured on film, grasping the atmosphere by portraying fragments of suppressed thoughts. These resurface as text on screen and audio.",
     screening: "click here for images of the screening of Melancholy Archive",
-    creditsSound: "sound (selby wall & ptolomaea)"
+    creditsSound: "sound (selby wall & ptolemaea)"
   },
   screening: {
     caption: "screening and exposition of melancholy archive",

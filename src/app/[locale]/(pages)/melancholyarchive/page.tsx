@@ -35,7 +35,7 @@ const Page = () => {
                         {t("melancholy.caption3")}
                         <br />
                         <br/>
-                        <Link href={"melancholyarchive/screening"}>{t("melancholy.screening")}</Link>
+                        <i><Link href={"melancholyarchive/screening"}>{t("melancholy.screening")}</Link></i>
                         <br />
                         <br/>
                         {t("general.credits")}<i> mies raadgever & neeltje de jong</i>

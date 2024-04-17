@@ -1,15 +1,23 @@
 "use client";
 
-import React from "react";
+import React,{useState} from "react";
 import { useI18n } from "../../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import { CldImage } from "next-cloudinary";
+import ImagePopUp from "@/components/ImagePopUp";
 
 const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
+  const [imageUrl, setImageUrl] = useState("")
+  const [show, setShow] = useState(false)
+
+  const showModal = (url: string) => {
+    setImageUrl(url)
+    setShow(true)
+  }
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -54,6 +62,7 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712519825/neeltje%20-%20sgw:%20haarbloempjes/img20240407_14195187_evdryb.jpg")}
           />
           <CldImage
             src={
@@ -63,6 +72,7 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712521688/neeltje%20-%20sgw:%20haarbloempjes/2023-06-25_17.41.02_nvxe1f.jpg")}
           />
           <CldImage
             src={
@@ -72,6 +82,7 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712521741/neeltje%20-%20sgw:%20haarbloempjes/2023-06-25_20.59.08_cvxni4.jpg")}
           />
           <CldImage
             src={
@@ -81,6 +92,7 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712522059/neeltje%20-%20sgw:%20haarbloempjes/Foto_07-04-2024_22_31_22_e9igw6.png")}
           />
           <CldImage
             src={
@@ -90,6 +102,7 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712521698/neeltje%20-%20sgw:%20haarbloempjes/2023-06-25_21.04.00_v6rpct.jpg")}
           />
         </div>
       </div>
@@ -105,6 +118,7 @@ const Page = () => {
           />
         </div>
       )}
+            <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
     </div>
   );
 };

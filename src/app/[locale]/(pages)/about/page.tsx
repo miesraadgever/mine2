@@ -82,6 +82,8 @@ const Page = () => {
                   <i>mjraadgever@gmail.com</i>
                 </div>
                 <p className="leading-6 text-sm">
+                  {t("about.mineVertoning1")}
+                    <br />
                   Nomination Kazerne Design Award, Eindhoven 2020 <br />
                   Blauwdruk, Amersfoort 2020 <br />
                   Culturele Zaterdag, Utrecht 2020 <br />
@@ -131,6 +133,10 @@ const Page = () => {
                 </div>
                 <div>
                   <p className="text-sm leading-6">
+                    {t("about.mineVertoning1")}
+                    <br />
+                    {t("about.neeltjeVertoning7")}
+                    <br />
                     {t("about.neeltjeVertoning1")}
                     <br />
                     {t("about.neeltjeVertoning2")}

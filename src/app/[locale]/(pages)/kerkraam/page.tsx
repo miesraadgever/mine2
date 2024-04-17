@@ -1,15 +1,24 @@
 "use client";
 
-import React from "react";
+import React,{useState} from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import { CldImage } from "next-cloudinary";
+import ImagePopUp from "@/components/ImagePopUp";
+
 
 const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
+  const [imageUrl, setImageUrl] = useState("")
+  const [show, setShow] = useState(false)
+
+  const showModal = (url: string) => {
+    setImageUrl(url)
+    setShow(true)
+  }
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -55,7 +64,8 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-84 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712239667/NEELTJE%20-%20kerkraam%20serie/image00069_u1idj1.jpg")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712239676/NEELTJE%20-%20kerkraam%20serie/image00075_ssayt2.jpg"
@@ -64,7 +74,8 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-84 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712239676/NEELTJE%20-%20kerkraam%20serie/image00075_ssayt2.jpg")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712325378/NEELTJE%20-%20kerkraam%20serie/img20240405_13111055_jmhhbu.jpg"
@@ -73,7 +84,8 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-84 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712325378/NEELTJE%20-%20kerkraam%20serie/img20240405_13111055_jmhhbu.jpg")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712325378/NEELTJE%20-%20kerkraam%20serie/img20240405_13103363_xpmghy.jpg"
@@ -82,7 +94,8 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-84 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712325378/NEELTJE%20-%20kerkraam%20serie/img20240405_13103363_xpmghy.jpg")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712325382/NEELTJE%20-%20kerkraam%20serie/img20240405_13125317_ro0lrl.jpg"
@@ -91,7 +104,8 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-84 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712325382/NEELTJE%20-%20kerkraam%20serie/img20240405_13125317_ro0lrl.jpg")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712325379/NEELTJE%20-%20kerkraam%20serie/img20240405_13114241_mwcfig.jpg"
@@ -100,7 +114,8 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-84 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712325379/NEELTJE%20-%20kerkraam%20serie/img20240405_13114241_mwcfig.jpg")}
+            />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712325380/NEELTJE%20-%20kerkraam%20serie/img20240405_13122504_fblx5j.jpg"
@@ -109,7 +124,8 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-84 object-cover"
-          />
+            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712325380/NEELTJE%20-%20kerkraam%20serie/img20240405_13122504_fblx5j.jpg")}
+            />
         </div>
       </div>
       {/* Grote afbeelding rechts  */}
@@ -126,7 +142,8 @@ const Page = () => {
           />
         </div>
       )}
-    </div>
+      <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
+   </div>
   );
 };
 
