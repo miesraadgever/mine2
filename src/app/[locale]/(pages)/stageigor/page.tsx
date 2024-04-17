@@ -1,15 +1,23 @@
 "use client";
 
-import React from "react";
+import React, {useState} from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import {CldImage} from "next-cloudinary";
+import ImagePopUp from "@/components/ImagePopUp";
 
 const Page = () => {
     const t = useI18n();
     const windowSize = useWindowSize();
     const smallScreen = windowSize.width! < 800;
+    const [imageUrl, setImageUrl] = useState("")
+    const [show, setShow] = useState(false)
+
+    const showModal = (url: string) => {
+        setImageUrl(url)
+        setShow(true)
+    }
 
     return (
         <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -55,7 +63,7 @@ const Page = () => {
                             width={250}
                             height={300}
                             className={"object-cover w-80 h-96"}
-
+                            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712235079/MIES%20-%20stagedesign/IMG_4380_wnga8r.jpg")}
                         />
                     </div>
                     <div className="">
@@ -65,7 +73,7 @@ const Page = () => {
                             width={300}
                             height={400}
                             className={"object-cover w-80 h-96"}
-
+                            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712235032/MIES%20-%20stagedesign/4_qmwr1n.jpg")}
                         />
                     </div>
                     <div className="">
@@ -75,7 +83,7 @@ const Page = () => {
                             width={600}
                             height={600}
                             className={"object-cover w-80 h-96"}
-
+                            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712235059/MIES%20-%20stagedesign/3_vjj6rh.jpg")}
                         />
                     </div>
                     <div>
@@ -101,6 +109,7 @@ const Page = () => {
                     </video>
                 </div>
             )}
+            <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
         </div>
     );
 };
