@@ -1,16 +1,22 @@
 "use client";
 
-import React from "react";
+import React, {useState} from "react";
 import { useI18n } from "../../../../../translations/client";
-import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import {CldImage} from "next-cloudinary";
-import Link from "next/link";
+import ImagePopUp from "@/components/ImagePopUp";
 
 const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
+  const [imageUrl, setImageUrl] = useState("")
+  const [show, setShow] = useState(false)
+
+  const showModal = (url: string) => {
+    setImageUrl(url)
+    setShow(true)
+  }
 
   return (
       <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -53,7 +59,7 @@ const Page = () => {
                   width={500}
                   height={600}
                   className={"object-cover w-72 h-96"}
-
+                  onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076107/21%20MI_NE%20-%20NWAA/2021-04-18_15.53.34_qwjzpj.jpg")}
               />
             </div>
             <div className="">
@@ -64,7 +70,7 @@ const Page = () => {
                   width={500}
                   height={600}
                   className={"object-cover w-72 h-96"}
-
+                  onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076066/21%20MI_NE%20-%20NWAA/2021-04-18_15.42.28_gpdben.jpg")}
               />
             </div>
             <div className="">
@@ -76,7 +82,7 @@ const Page = () => {
                   width={500}
                   height={600}
                   className={"object-cover w-72 h-96"}
-
+                  onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076065/21%20MI_NE%20-%20NWAA/2021-04-18_15.11.06_bnbvey.jpg")}
               />
             </div>
             <div className="">
@@ -88,6 +94,7 @@ const Page = () => {
                   width={500}
                   height={600}
                   className={"object-cover w-72 h-96"}
+                  onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076072/21%20MI_NE%20-%20NWAA/2021-04-18_16.33.48_vszccw.jpg")}
               />
             </div>
           </div>
@@ -104,6 +111,7 @@ const Page = () => {
               </video>
             </div>
         )}
+        <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
       </div>
   );
 };
