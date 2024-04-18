@@ -1,16 +1,24 @@
 "use client";
 
-import React from "react";
+import React, {useState} from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import {CldImage} from "next-cloudinary";
 import Link from "next/link";
+import ImagePopUp from "@/components/ImagePopUp";
 
 const Page = () => {
     const t = useI18n();
     const windowSize = useWindowSize();
     const smallScreen = windowSize.width! < 800;
+    const [imageUrl, setImageUrl] = useState("")
+    const [show, setShow] = useState(false)
+
+    const showModal = (url: string) => {
+        setImageUrl(url)
+        setShow(true)
+    }
 
     return (
         <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -41,6 +49,7 @@ const Page = () => {
                                 alt={"ma-1"}
                                 width={500}
                                 height={600}
+                                onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710074528/12%20MI_NE%202021%201%20-%20CC%201996%20FDALC%201992/CCFDALC.png")}
                             />
                         </div>
                     </div>
@@ -53,6 +62,7 @@ const Page = () => {
                             alt={"ma-1"}
                             width={400}
                             height={500}
+                            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710074528/12%20MI_NE%202021%201%20-%20CC%201996%20FDALC%201992/FDALC1992.png")}
 
                         />
                     </div>
@@ -63,6 +73,7 @@ const Page = () => {
                             alt={"ma-2"}
                             width={400}
                             height={500}
+                            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710074526/12%20MI_NE%202021%201%20-%20CC%201996%20FDALC%201992/CC1996.jpg")}
 
                         />
                     </div>
@@ -81,6 +92,7 @@ const Page = () => {
                     />
                 </div>
             )}
+            <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
         </div>
     );
 };
