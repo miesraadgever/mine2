@@ -10,7 +10,7 @@ interface ImagePopUpProps {
 const HDImage: React.FC<ImagePopUpProps> = ({ hideDialog, imageUrl, show }) => {
 
     return (
-        <div className={`image-popup ${show ? 'show' : ''}`}>
+        <div className={`image-popup ${show ? 'show' : '' }`}>
             <div className=" flex flex-col justify-center" style={{ maxWidth: '100%', maxHeight: '95%', objectFit: 'contain'}}
             >
                 <div className={"p-2 pt-2 text-white flex flex-row justify-between"}>
