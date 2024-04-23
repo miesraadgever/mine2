@@ -31,7 +31,7 @@ const Page = () => {
           {smallScreen && (
               <div className={"col-12 justify-center flex"}>
                 <div className="flex ">
-                  <video loop muted autoPlay>
+                  <video loop muted autoPlay controls>
                     <source
                         src={
                           "https://res.cloudinary.com/dwgsproch/video/upload/v1712757836/13%20MI_NE%202021%201%20-%20nostalgia%20ultra%20%5Bzee%5D/edit_gtfzvm.mp4"
@@ -46,7 +46,7 @@ const Page = () => {
         {/* Grote afbeelding rechts  */}
         {!smallScreen && (
             <div className={`fixed right-0 justify-end flex col-7`}>
-              <video  loop muted autoPlay>
+              <video  loop muted autoPlay controls>
                 <source
                     src={
                       "https://res.cloudinary.com/dwgsproch/video/upload/v1712757836/13%20MI_NE%202021%201%20-%20nostalgia%20ultra%20%5Bzee%5D/edit_gtfzvm.mp4"

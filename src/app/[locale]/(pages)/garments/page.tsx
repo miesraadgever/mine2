@@ -31,10 +31,9 @@ const Page = () => {
 
       {/* Images */}
       <div
-        className={`col-6 flex-wrap flex gap-2 mt-10 ${smallScreen ? " justify-center" : " justify-start"}`}
+        className={`flex-wrap flex gap-2 mt-10 ${smallScreen ? " justify-center col-12" : " justify-start col-6"}`}
       >
         <a href="/garments/lace">
-          {" "}
           <div className="">
             <CldImage
               src={
@@ -43,12 +42,11 @@ const Page = () => {
               alt={"lace"}
               width={180}
               height={240}
-              className="w-43 h-48 object-cover"
+              className={`${smallScreen ? "w-40 h-48" : "w-43 h-48"} object-cover`}
             />
-          </div>{" "}
+          </div>
         </a>
         <a href="/garments/sheotw">
-          {" "}
           <div className="">
             <CldImage
               src={
@@ -57,9 +55,9 @@ const Page = () => {
               alt={"sheotw"}
               width={180}
               height={240}
-              className="w-43 h-48 object-cover"
+              className={`${smallScreen ? "w-40 h-48" : "w-43 h-48"} object-cover`}
             />
-          </div>{" "}
+          </div>
         </a>
         <a href="/garments/girl">
           {" "}
@@ -71,12 +69,11 @@ const Page = () => {
               alt={"girl"}
               width={180}
               height={240}
-              className="w-43 h-48 object-cover"
+              className={`${smallScreen ? "w-40 h-48" : "w-43 h-48"} object-cover`}
             />
           </div>{" "}
         </a>
         <a href="/garments/torn">
-          {" "}
           <div className="">
             <CldImage
               src={
@@ -85,12 +82,11 @@ const Page = () => {
               alt={"torntorntorn"}
               width={180}
               height={240}
-              className="w-43 h-48 object-cover"
+              className={`${smallScreen ? "w-40 h-48" : "w-43 h-48"} object-cover`}
             />
-          </div>{" "}
+          </div>
         </a>
         <a href="/garments/maybe">
-          {" "}
           <div className="">
             <CldImage
               src={
@@ -99,12 +95,11 @@ const Page = () => {
               alt={"tornmaybe"}
               width={180}
               height={240}
-              className="w-43 h-48 object-cover"
+              className={`${smallScreen ? "w-40 h-48" : "w-43 h-48"} object-cover`}
             />
           </div>{" "}
         </a>
         <a href="/garments/angel">
-          {" "}
           <div className="">
             <CldImage
               src={
@@ -113,12 +108,11 @@ const Page = () => {
               alt={"angel"}
               width={180}
               height={240}
-              className="w-43 h-48 object-cover"
+              className={`${smallScreen ? "w-40 h-48" : "w-43 h-48"} object-cover`}
             />
-          </div>{" "}
+          </div>
         </a>
         <a href="/garments/sorrow">
-          {" "}
           <div className="">
             <CldImage
               src={
@@ -127,9 +121,9 @@ const Page = () => {
               alt={"sorrow"}
               width={180}
               height={240}
-              className="w-43 h-48 object-cover"
+              className={`${smallScreen ? "w-40 h-48" : "w-43 h-48"} object-cover`}
             />
-          </div>{" "}
+          </div>
         </a>
       </div>
     </div>

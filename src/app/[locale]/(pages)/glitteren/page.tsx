@@ -44,7 +44,7 @@ const Page = () => {
             <div className="flex ">
               <Image
                 src={
-                  "https://res.cloudinary.com/dwgsproch/image/upload/v1711719585/22%20NEELTJE%202021%203%20-%20glitteren/2021-01-09_15.28.43_hb1ehz.jpg"
+                  "https://res.cloudinary.com/dwgsproch/image/upload/v1710076035/22%20NEELTJE%202021%203%20-%20glitteren/2021-03-28_23.31.28_vfh0ex.jpg"
                 }
                 alt={"glit"}
                 width={600}
