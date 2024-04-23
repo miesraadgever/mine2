@@ -50,10 +50,10 @@ const Page = () => {
                 {smallScreen && (
                     <div className={"col-12 justify-center flex"}>
                         <div className="flex ">
-                            <iframe width="960" height="615" src="https://www.youtube.com/embed/ULmiVXUV8AM?si=1mNU6Kkue2dJ336F&autoplay=1"
+                            <iframe src="https://www.youtube.com/embed/qPe06K-rV1Q?si=5jZ0mw2AoBIGYuNV&autoplay=1"
                                     title="YouTube video player" frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen ></iframe>
+                                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
                 )}
