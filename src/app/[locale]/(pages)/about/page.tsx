@@ -89,7 +89,7 @@ const Page = () => {
                   Culturele Zaterdag, Utrecht 2020 <br />
                   A0 Expo, Utrecht 2020 <br />
                   Graduation Show Design Academy Eindhoven, 2019 <br />
-                  Amersfoortste Prachtnacht, 2018{" "}
+                  Amersfoortste Prachtnacht, 2018
                 </p>
               </div>
           )}
@@ -171,12 +171,14 @@ const Page = () => {
                   <i>mjraadgever@gmail.com</i>
                   <br /> <br />
                   <p className="leading-6">
+                    {t("about.mineVertoning1")}
+                    <br />
                     Nomination Kazerne Design Award, Eindhoven 2020 <br />
                     Blauwdruk, Amersfoort 2020 <br />
                     Culturele Zaterdag, Utrecht 2020 <br />
                     A0 Expo, Utrecht 2020 <br />
                     Graduation Show Design Academy Eindhoven, 2019 <br />
-                    Amersfoortste Prachtnacht, 2018{" "}
+                    Amersfoortste Prachtnacht, 2018
                   </p>
                 </div>
               </div>
@@ -196,6 +198,8 @@ const Page = () => {
                   <i>nelaneeltje@gmail.com</i>
                   <br /> <br />
                   <p className="leading-6 text-sm">
+                    {t("about.mineVertoning1")}
+                    <br />
                     {t("about.neeltjeVertoning1")}
                     <br />
                     {t("about.neeltjeVertoning2")}
