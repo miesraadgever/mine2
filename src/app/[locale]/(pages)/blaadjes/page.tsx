@@ -1,6 +1,6 @@
 "use client";
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
@@ -11,13 +11,13 @@ const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
-  const [imageUrl, setImageUrl] = useState("")
-  const [show, setShow] = useState(false)
+  const [imageUrl, setImageUrl] = useState("");
+  const [show, setShow] = useState(false);
 
   const showModal = (url: string) => {
-    setImageUrl(url)
-    setShow(true)
-  }
+    setImageUrl(url);
+    setShow(true);
+  };
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -59,7 +59,11 @@ const Page = () => {
             alt={"blaadjes1"}
             width={300}
             height={200}
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1709928168/3%20NEELTJE%202018%209%20-%20blaadjes%20romance/5_jgsyng.png")}
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1709928168/3%20NEELTJE%202018%209%20-%20blaadjes%20romance/5_jgsyng.png",
+              )
+            }
           />
           <CldImage
             src={
@@ -68,7 +72,11 @@ const Page = () => {
             alt={"blaadjes2"}
             width={300}
             height={175}
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1709928130/3%20NEELTJE%202018%209%20-%20blaadjes%20romance/6_vpr2ow.png")}
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1709928130/3%20NEELTJE%202018%209%20-%20blaadjes%20romance/6_vpr2ow.png",
+              )
+            }
           />
           <CldImage
             src={
@@ -77,7 +85,11 @@ const Page = () => {
             alt={"blaadjes3"}
             width={300}
             height={175}
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1709928125/3%20NEELTJE%202018%209%20-%20blaadjes%20romance/7_dkxxmm.png")}
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1709928125/3%20NEELTJE%202018%209%20-%20blaadjes%20romance/7_dkxxmm.png",
+              )
+            }
           />
         </div>
       </div>
@@ -94,7 +106,11 @@ const Page = () => {
           />
         </div>
       )}
-            <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
+      <ImagePopUp
+        hideDialog={() => setShow(false)}
+        imageUrl={imageUrl}
+        show={show}
+      />
     </div>
   );
 };

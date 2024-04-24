@@ -1,6 +1,6 @@
 "use client";
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
@@ -11,13 +11,13 @@ const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
-  const [imageUrl, setImageUrl] = useState("")
-  const [show, setShow] = useState(false)
+  const [imageUrl, setImageUrl] = useState("");
+  const [show, setShow] = useState(false);
 
   const showModal = (url: string) => {
-    setImageUrl(url)
-    setShow(true)
-  }
+    setImageUrl(url);
+    setShow(true);
+  };
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -94,7 +94,11 @@ const Page = () => {
           </div>
         </div>
       )}
-            <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
+      <ImagePopUp
+        hideDialog={() => setShow(false)}
+        imageUrl={imageUrl}
+        show={show}
+      />
     </div>
   );
 };

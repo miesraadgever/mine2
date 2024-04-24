@@ -1,6 +1,6 @@
 "use client";
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useI18n } from "../../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
@@ -11,13 +11,13 @@ const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
-  const [imageUrl, setImageUrl] = useState("")
-  const [show, setShow] = useState(false)
+  const [imageUrl, setImageUrl] = useState("");
+  const [show, setShow] = useState(false);
 
   const showModal = (url: string) => {
-    setImageUrl(url)
-    setShow(true)
-  }
+    setImageUrl(url);
+    setShow(true);
+  };
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -60,8 +60,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076115/25%20NEELTJE%202021%205%20-%20torn%20torn%20torn%2C%20as%20is%20life/IMG_9737_qisnou.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1710076115/25%20NEELTJE%202021%205%20-%20torn%20torn%20torn%2C%20as%20is%20life/IMG_9737_qisnou.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1710076118/25%20NEELTJE%202021%205%20-%20torn%20torn%20torn%2C%20as%20is%20life/IMG_9741_mdfpah.jpg"
@@ -70,8 +74,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076118/25%20NEELTJE%202021%205%20-%20torn%20torn%20torn%2C%20as%20is%20life/IMG_9741_mdfpah.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1710076118/25%20NEELTJE%202021%205%20-%20torn%20torn%20torn%2C%20as%20is%20life/IMG_9741_mdfpah.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1710076114/25%20NEELTJE%202021%205%20-%20torn%20torn%20torn%2C%20as%20is%20life/IMG_9752_w4m8wo.jpg"
@@ -80,8 +88,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076114/25%20NEELTJE%202021%205%20-%20torn%20torn%20torn%2C%20as%20is%20life/IMG_9752_w4m8wo.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1710076114/25%20NEELTJE%202021%205%20-%20torn%20torn%20torn%2C%20as%20is%20life/IMG_9752_w4m8wo.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712570683/25%20NEELTJE%202021%205%20-%20torn%20torn%20torn%2C%20as%20is%20life/Foto_08-04-2024_09_30_58_gcjjv3.jpg"
@@ -90,8 +102,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712570683/25%20NEELTJE%202021%205%20-%20torn%20torn%20torn%2C%20as%20is%20life/Foto_08-04-2024_09_30_58_gcjjv3.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712570683/25%20NEELTJE%202021%205%20-%20torn%20torn%20torn%2C%20as%20is%20life/Foto_08-04-2024_09_30_58_gcjjv3.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712524304/25%20NEELTJE%202021%205%20-%20torn%20torn%20torn%2C%20as%20is%20life/2023-03-03_14.37.28_w767zv.jpg"
@@ -100,8 +116,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712524304/25%20NEELTJE%202021%205%20-%20torn%20torn%20torn%2C%20as%20is%20life/2023-03-03_14.37.28_w767zv.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712524304/25%20NEELTJE%202021%205%20-%20torn%20torn%20torn%2C%20as%20is%20life/2023-03-03_14.37.28_w767zv.jpg",
+              )
+            }
+          />
         </div>
       </div>
       {/* Grote afbeelding rechts  */}
@@ -116,8 +136,12 @@ const Page = () => {
           />
         </div>
       )}
-          <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
-   </div>
+      <ImagePopUp
+        hideDialog={() => setShow(false)}
+        imageUrl={imageUrl}
+        show={show}
+      />
+    </div>
   );
 };
 

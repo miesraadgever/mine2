@@ -1,6 +1,6 @@
 "use client";
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useI18n } from "../../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
@@ -11,13 +11,13 @@ const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
-  const [imageUrl, setImageUrl] = useState("")
-  const [show, setShow] = useState(false)
+  const [imageUrl, setImageUrl] = useState("");
+  const [show, setShow] = useState(false);
 
   const showModal = (url: string) => {
-    setImageUrl(url)
-    setShow(true)
-  }
+    setImageUrl(url);
+    setShow(true);
+  };
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -62,7 +62,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712523923/neeltje%20-%20sgw:%20buikketting/Naamloos_33_nup4ng.jpg")}
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712523923/neeltje%20-%20sgw:%20buikketting/Naamloos_33_nup4ng.jpg",
+              )
+            }
           />
           <CldImage
             src={
@@ -72,7 +76,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712751922/neeltje%20-%20sgw:%20buikketting/2018-12-24_14.26.491_bfpge5.jpg")}
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712751922/neeltje%20-%20sgw:%20buikketting/2018-12-24_14.26.491_bfpge5.jpg",
+              )
+            }
           />
           <CldImage
             src={
@@ -82,7 +90,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712751968/neeltje%20-%20sgw:%20buikketting/img20240408_10151788_hco54s.jpg")}
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712751968/neeltje%20-%20sgw:%20buikketting/img20240408_10151788_hco54s.jpg",
+              )
+            }
           />
           <CldImage
             src={
@@ -92,7 +104,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712751926/neeltje%20-%20sgw:%20buikketting/IMG_2022_04_18-09_46_15_4790_0DD69F001_bvzmaj.jpg")}
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712751926/neeltje%20-%20sgw:%20buikketting/IMG_2022_04_18-09_46_15_4790_0DD69F001_bvzmaj.jpg",
+              )
+            }
           />
           <video
             className={"w-72 h-84 object-cover"}
@@ -122,7 +138,11 @@ const Page = () => {
           />
         </div>
       )}
-            <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
+      <ImagePopUp
+        hideDialog={() => setShow(false)}
+        imageUrl={imageUrl}
+        show={show}
+      />
     </div>
   );
 };

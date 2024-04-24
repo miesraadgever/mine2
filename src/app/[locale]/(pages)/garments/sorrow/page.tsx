@@ -1,24 +1,23 @@
 "use client";
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useI18n } from "../../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import { CldImage } from "next-cloudinary";
 import ImagePopUp from "@/components/ImagePopUp";
 
-
 const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
-  const [imageUrl, setImageUrl] = useState("")
-  const [show, setShow] = useState(false)
+  const [imageUrl, setImageUrl] = useState("");
+  const [show, setShow] = useState(false);
 
   const showModal = (url: string) => {
-    setImageUrl(url)
-    setShow(true)
-  }
+    setImageUrl(url);
+    setShow(true);
+  };
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -78,8 +77,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-84 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076035/18%20NEELTJE%202021%203%20-%20alter%20ego%20-%20sorrow%20revolution%20skirt/2021-03-12_01.11.41-4-1_vq8akt.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1710076035/18%20NEELTJE%202021%203%20-%20alter%20ego%20-%20sorrow%20revolution%20skirt/2021-03-12_01.11.41-4-1_vq8akt.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1710076135/18%20NEELTJE%202021%203%20-%20alter%20ego%20-%20sorrow%20revolution%20skirt/2021-03-12_16.41.45_fveiqa.jpg"
@@ -88,8 +91,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-84 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076135/18%20NEELTJE%202021%203%20-%20alter%20ego%20-%20sorrow%20revolution%20skirt/2021-03-12_16.41.45_fveiqa.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1710076135/18%20NEELTJE%202021%203%20-%20alter%20ego%20-%20sorrow%20revolution%20skirt/2021-03-12_16.41.45_fveiqa.jpg",
+              )
+            }
+          />
           <video
             className={"w-72 h-84 object-cover"}
             width="350"
@@ -112,8 +119,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-84 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712567672/18%20NEELTJE%202021%203%20-%20alter%20ego%20-%20sorrow%20revolution%20skirt/2021-03-12_17.54.12_hudmwu.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712567672/18%20NEELTJE%202021%203%20-%20alter%20ego%20-%20sorrow%20revolution%20skirt/2021-03-12_17.54.12_hudmwu.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712568100/18%20NEELTJE%202021%203%20-%20alter%20ego%20-%20sorrow%20revolution%20skirt/2021-03-12_20.14.02_-_Copy_qz1iat.jpg"
@@ -122,8 +133,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-84 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712568100/18%20NEELTJE%202021%203%20-%20alter%20ego%20-%20sorrow%20revolution%20skirt/2021-03-12_20.14.02_-_Copy_qz1iat.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712568100/18%20NEELTJE%202021%203%20-%20alter%20ego%20-%20sorrow%20revolution%20skirt/2021-03-12_20.14.02_-_Copy_qz1iat.jpg",
+              )
+            }
+          />
           <video
             className={"w-72 h-84 object-cover"}
             width="330"
@@ -152,8 +167,12 @@ const Page = () => {
           />
         </div>
       )}
-          <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
-   </div>
+      <ImagePopUp
+        hideDialog={() => setShow(false)}
+        imageUrl={imageUrl}
+        show={show}
+      />
+    </div>
   );
 };
 

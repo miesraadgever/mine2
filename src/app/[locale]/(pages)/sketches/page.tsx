@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
@@ -10,13 +10,13 @@ const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
-  const [imageUrl, setImageUrl] = useState("")
-  const [show, setShow] = useState(false)
+  const [imageUrl, setImageUrl] = useState("");
+  const [show, setShow] = useState(false);
 
   const showModal = (url: string) => {
-    setImageUrl(url)
-    setShow(true)
-  }
+    setImageUrl(url);
+    setShow(true);
+  };
 
   return (
     <div
@@ -48,7 +48,11 @@ const Page = () => {
           alt={"book1"}
           width={300}
           height={400}
-          onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710078926/MIES%20-%20SKETCHES/M_sketch_eig9yx.jpg")}
+          onClick={() =>
+            showModal(
+              "https://res.cloudinary.com/dwgsproch/image/upload/v1710078926/MIES%20-%20SKETCHES/M_sketch_eig9yx.jpg",
+            )
+          }
         />
         <Image
           src={
@@ -57,8 +61,11 @@ const Page = () => {
           alt={"book1"}
           width={300}
           height={400}
-          onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710078921/MIES%20-%20SKETCHES/25-03-1_shdczc.jpg")}
-
+          onClick={() =>
+            showModal(
+              "https://res.cloudinary.com/dwgsproch/image/upload/v1710078921/MIES%20-%20SKETCHES/25-03-1_shdczc.jpg",
+            )
+          }
         />
         <Image
           src={
@@ -67,7 +74,11 @@ const Page = () => {
           alt={"book1"}
           width={300}
           height={400}
-          onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710078917/MIES%20-%20SKETCHES/25-03-2_m5bycr.jpg")}
+          onClick={() =>
+            showModal(
+              "https://res.cloudinary.com/dwgsproch/image/upload/v1710078917/MIES%20-%20SKETCHES/25-03-2_m5bycr.jpg",
+            )
+          }
         />
         <Image
           src={
@@ -76,10 +87,18 @@ const Page = () => {
           alt={"book1"}
           width={300}
           height={400}
-          onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710078914/MIES%20-%20SKETCHES/Untitled_3_shdf6b.jpg")}
+          onClick={() =>
+            showModal(
+              "https://res.cloudinary.com/dwgsproch/image/upload/v1710078914/MIES%20-%20SKETCHES/Untitled_3_shdf6b.jpg",
+            )
+          }
         />
       </div>
-      <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
+      <ImagePopUp
+        hideDialog={() => setShow(false)}
+        imageUrl={imageUrl}
+        show={show}
+      />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
@@ -11,13 +11,13 @@ const Page = () => {
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
 
-  const [imageUrl, setImageUrl] = useState("")
-  const [show, setShow] = useState(false)
+  const [imageUrl, setImageUrl] = useState("");
+  const [show, setShow] = useState(false);
 
   const showModal = (url: string) => {
-    setImageUrl(url)
-    setShow(true)
-  }
+    setImageUrl(url);
+    setShow(true);
+  };
 
   return (
     <div
@@ -45,7 +45,11 @@ const Page = () => {
           width={712}
           height={828}
           className={"object-cover w-80 h-96"}
-          onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710077002/MIES%20-%20tattoos/IMG_8519_n8rleb.png")}
+          onClick={() =>
+            showModal(
+              "https://res.cloudinary.com/dwgsproch/image/upload/v1710077002/MIES%20-%20tattoos/IMG_8519_n8rleb.png",
+            )
+          }
         />
         <Image
           alt={"tattoo2"}
@@ -53,10 +57,18 @@ const Page = () => {
           width={375}
           height={650}
           className={"object-cover w-80 h-96"}
-          onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711551030/MIES%20-%20tattoos/E21DD21B-F1E7-4F37-AC5A-3708E852386D_zwuyx3_ubs4ov.jpg")}
+          onClick={() =>
+            showModal(
+              "https://res.cloudinary.com/dwgsproch/image/upload/v1711551030/MIES%20-%20tattoos/E21DD21B-F1E7-4F37-AC5A-3708E852386D_zwuyx3_ubs4ov.jpg",
+            )
+          }
         />
       </div>
-      <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
+      <ImagePopUp
+        hideDialog={() => setShow(false)}
+        imageUrl={imageUrl}
+        show={show}
+      />
     </div>
   );
 };

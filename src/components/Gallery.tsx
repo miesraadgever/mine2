@@ -20,7 +20,7 @@ const Gallery: React.FC<GalleryProps> = ({ results, fetchFolders, video }) => {
   const smallScreen = windowSize.width! < 445;
   const t = useI18n();
 
-  useEffect( () => {
+  useEffect(() => {
     const url = document.URL;
     if (url.includes("mies")) {
       setActivePage("mies");
@@ -48,7 +48,7 @@ const Gallery: React.FC<GalleryProps> = ({ results, fetchFolders, video }) => {
       const newResults = fetchFolders(folder);
       setFilteredResults(await newResults);
     });
-  }
+  };
 
   return (
     <>

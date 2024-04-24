@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
@@ -12,13 +12,13 @@ const Page = () => {
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
 
-    const [imageUrl, setImageUrl] = useState("")
-    const [show, setShow] = useState(false)
+  const [imageUrl, setImageUrl] = useState("");
+  const [show, setShow] = useState(false);
 
-    const showModal = (url: string) => {
-        setImageUrl(url)
-        setShow(true)
-    }
+  const showModal = (url: string) => {
+    setImageUrl(url);
+    setShow(true);
+  };
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -39,7 +39,11 @@ const Page = () => {
                 alt={"street1"}
                 width={500}
                 height={600}
-                onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076526/27.1%20MI_NE%20-%20streets%202020%207/9d02e4c3-4ef9-4b14-95e6-454c19456a74_diejyq.jpg")}
+                onClick={() =>
+                  showModal(
+                    "https://res.cloudinary.com/dwgsproch/image/upload/v1710076526/27.1%20MI_NE%20-%20streets%202020%207/9d02e4c3-4ef9-4b14-95e6-454c19456a74_diejyq.jpg",
+                  )
+                }
               />
             </div>
           </div>
@@ -56,7 +60,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-80 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076528/27.1%20MI_NE%20-%20streets%202020%207/MN_streets_dx7pnn.jpg")}
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1710076528/27.1%20MI_NE%20-%20streets%202020%207/MN_streets_dx7pnn.jpg",
+              )
+            }
           />
           <CldImage
             src={
@@ -66,7 +74,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-80 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076528/27.1%20MI_NE%20-%20streets%202020%207/6ab039cf-fd09-4204-8519-ac56535ce442_-_1_sf21qg.jpg")}
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1710076528/27.1%20MI_NE%20-%20streets%202020%207/6ab039cf-fd09-4204-8519-ac56535ce442_-_1_sf21qg.jpg",
+              )
+            }
           />
           <CldImage
             src={
@@ -76,7 +88,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-80 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076527/27.1%20MI_NE%20-%20streets%202020%207/ed3be878-5ed8-4a56-b13e-d0ede80736a8_mudxvm.jpg")}
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1710076527/27.1%20MI_NE%20-%20streets%202020%207/ed3be878-5ed8-4a56-b13e-d0ede80736a8_mudxvm.jpg",
+              )
+            }
           />
           <CldImage
             src={
@@ -86,7 +102,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-80 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711641356/27.1%20MI_NE%20-%20streets%202020%207/IMG_4339_rafeyk.heic")}
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1711641356/27.1%20MI_NE%20-%20streets%202020%207/IMG_4339_rafeyk.heic",
+              )
+            }
           />
           <CldImage
             src={
@@ -96,7 +116,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-80 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1711641446/27.1%20MI_NE%20-%20streets%202020%207/preview_vesday.jpg")}
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1711641446/27.1%20MI_NE%20-%20streets%202020%207/preview_vesday.jpg",
+              )
+            }
           />
         </div>
       </div>
@@ -113,7 +137,11 @@ const Page = () => {
           />
         </div>
       )}
-        <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
+      <ImagePopUp
+        hideDialog={() => setShow(false)}
+        imageUrl={imageUrl}
+        show={show}
+      />
     </div>
   );
 };

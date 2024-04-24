@@ -1,6 +1,6 @@
 "use client";
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
@@ -11,13 +11,13 @@ const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
-  const [imageUrl, setImageUrl] = useState("")
-  const [show, setShow] = useState(false)
+  const [imageUrl, setImageUrl] = useState("");
+  const [show, setShow] = useState(false);
 
   const showModal = (url: string) => {
-    setImageUrl(url)
-    setShow(true)
-  }
+    setImageUrl(url);
+    setShow(true);
+  };
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -60,8 +60,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-80 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076530/29%20NEELTJE%202021%2010%20-%20embody%3B%20feel%20-%20come%20back%20-%20do%20not%20perceive%20me/2A21D200-4DD2-4361-AD9C-4D5CC6C25EFC_cftrkt.jpg")}
-
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1710076530/29%20NEELTJE%202021%2010%20-%20embody%3B%20feel%20-%20come%20back%20-%20do%20not%20perceive%20me/2A21D200-4DD2-4361-AD9C-4D5CC6C25EFC_cftrkt.jpg",
+              )
+            }
           />
           <CldImage
             src={
@@ -71,8 +74,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-80 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076529/29%20NEELTJE%202021%2010%20-%20embody%3B%20feel%20-%20come%20back%20-%20do%20not%20perceive%20me/fc969910-2f00-45ec-980c-baafa1554223_c3kmy3.jpg")}
-
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1710076529/29%20NEELTJE%202021%2010%20-%20embody%3B%20feel%20-%20come%20back%20-%20do%20not%20perceive%20me/fc969910-2f00-45ec-980c-baafa1554223_c3kmy3.jpg",
+              )
+            }
           />
           <CldImage
             src={
@@ -82,8 +88,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-80 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712756444/29%20NEELTJE%202021%2010%20-%20embody%3B%20feel%20-%20come%20back%20-%20do%20not%20perceive%20me/WhatsApp_Image_2024-04-10_at_15.35.19_s9svci.jpg")}
-
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712756444/29%20NEELTJE%202021%2010%20-%20embody%3B%20feel%20-%20come%20back%20-%20do%20not%20perceive%20me/WhatsApp_Image_2024-04-10_at_15.35.19_s9svci.jpg",
+              )
+            }
           />
           <CldImage
             src={
@@ -93,8 +102,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-80 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712755683/29%20NEELTJE%202021%2010%20-%20embody%3B%20feel%20-%20come%20back%20-%20do%20not%20perceive%20me/90efd79e-e01d-4dc3-b889-05f868dbad22_vkmjs0.jpg")}
-
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712755683/29%20NEELTJE%202021%2010%20-%20embody%3B%20feel%20-%20come%20back%20-%20do%20not%20perceive%20me/90efd79e-e01d-4dc3-b889-05f868dbad22_vkmjs0.jpg",
+              )
+            }
           />
         </div>
       </div>
@@ -111,7 +123,11 @@ const Page = () => {
           </video>
         </div>
       )}
-            <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
+      <ImagePopUp
+        hideDialog={() => setShow(false)}
+        imageUrl={imageUrl}
+        show={show}
+      />
     </div>
   );
 };

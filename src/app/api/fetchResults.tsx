@@ -15,19 +15,17 @@ export const fetchResults = async (folder: string): Promise<SearchResult[]> => {
     expression = `resource_type:image AND folder=${folder}`;
   }
 
-
   try {
     result = (await cloudinary.v2.search
-        .expression(`${expression}`)
-        .sort_by("public_id", "desc")
-        .with_field("metadata")
-        .with_field("image_metadata")
-        .with_field("context")
-        .execute()) as { resources: SearchResult[] };
+      .expression(`${expression}`)
+      .sort_by("public_id", "desc")
+      .with_field("metadata")
+      .with_field("image_metadata")
+      .with_field("context")
+      .execute()) as { resources: SearchResult[] };
   } catch (e) {
-    console.log(e)
+    console.log(e);
   }
-
 
   const sortByAlt = (a: SearchResult, b: SearchResult) => {
     //TODO implement fix when there are no results!!
@@ -64,7 +62,6 @@ export const fetchResults = async (folder: string): Promise<SearchResult[]> => {
     const sorted = result!.resources.toSorted(sortByAlt);
     return sorted;
   } else {
-    return []
+    return [];
   }
-
 };

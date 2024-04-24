@@ -1,6 +1,6 @@
 "use client";
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useI18n } from "../../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
@@ -11,13 +11,13 @@ const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
-  const [imageUrl, setImageUrl] = useState("")
-  const [show, setShow] = useState(false)
+  const [imageUrl, setImageUrl] = useState("");
+  const [show, setShow] = useState(false);
 
   const showModal = (url: string) => {
-    setImageUrl(url)
-    setShow(true)
-  }
+    setImageUrl(url);
+    setShow(true);
+  };
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -59,8 +59,12 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712565488/neeltje%20-%20she%20cdboekje/2022-10-27_12_08_18-Epson_Scan_2_td1r8t.png")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712565488/neeltje%20-%20she%20cdboekje/2022-10-27_12_08_18-Epson_Scan_2_td1r8t.png",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712565475/neeltje%20-%20she%20cdboekje/2022-10-27_12_07_36-Epson_Scan_2_asy18g.png"
@@ -69,8 +73,12 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712565475/neeltje%20-%20she%20cdboekje/2022-10-27_12_07_36-Epson_Scan_2_asy18g.png")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712565475/neeltje%20-%20she%20cdboekje/2022-10-27_12_07_36-Epson_Scan_2_asy18g.png",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712564611/neeltje%20-%20she%20cdboekje/img20240408_10184045_ekipyy.jpg"
@@ -79,8 +87,12 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712564611/neeltje%20-%20she%20cdboekje/img20240408_10184045_ekipyy.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712564611/neeltje%20-%20she%20cdboekje/img20240408_10184045_ekipyy.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712564628/neeltje%20-%20she%20cdboekje/img20240408_10180431_ozhhg5.jpg"
@@ -89,8 +101,12 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712564628/neeltje%20-%20she%20cdboekje/img20240408_10180431_ozhhg5.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712564628/neeltje%20-%20she%20cdboekje/img20240408_10180431_ozhhg5.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712326248/neeltje%20-%20she%20cdboekje/img20240405_131412311_urkwyx.jpg"
@@ -99,8 +115,12 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712326248/neeltje%20-%20she%20cdboekje/img20240405_131412311_urkwyx.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712326248/neeltje%20-%20she%20cdboekje/img20240405_131412311_urkwyx.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712326256/neeltje%20-%20she%20cdboekje/img20240405_131819161_ayz4k7.jpg"
@@ -109,8 +129,12 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712326256/neeltje%20-%20she%20cdboekje/img20240405_131819161_ayz4k7.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712326256/neeltje%20-%20she%20cdboekje/img20240405_131819161_ayz4k7.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712564571/neeltje%20-%20she%20cdboekje/img20240408_10165657_md9v0c.jpg"
@@ -119,8 +143,12 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712564571/neeltje%20-%20she%20cdboekje/img20240408_10165657_md9v0c.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712564571/neeltje%20-%20she%20cdboekje/img20240408_10165657_md9v0c.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712565504/neeltje%20-%20she%20cdboekje/2022-10-27_12_09_12-Epson_Scan_2_llv7vb.png"
@@ -129,8 +157,12 @@ const Page = () => {
             width={400}
             height={300}
             className="w-72 h-62 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712565504/neeltje%20-%20she%20cdboekje/2022-10-27_12_09_12-Epson_Scan_2_llv7vb.png")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712565504/neeltje%20-%20she%20cdboekje/2022-10-27_12_09_12-Epson_Scan_2_llv7vb.png",
+              )
+            }
+          />
         </div>
       </div>
       {/* Grote afbeelding rechts  */}
@@ -146,8 +178,12 @@ const Page = () => {
           />
         </div>
       )}
-         <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
-  </div>
+      <ImagePopUp
+        hideDialog={() => setShow(false)}
+        imageUrl={imageUrl}
+        show={show}
+      />
+    </div>
   );
 };
 

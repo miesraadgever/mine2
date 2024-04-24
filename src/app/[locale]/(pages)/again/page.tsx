@@ -1,6 +1,6 @@
 "use client";
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
@@ -11,13 +11,13 @@ const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
-  const [imageUrl, setImageUrl] = useState("")
-  const [show, setShow] = useState(false)
+  const [imageUrl, setImageUrl] = useState("");
+  const [show, setShow] = useState(false);
 
   const showModal = (url: string) => {
-    setImageUrl(url)
-    setShow(true)
-  }
+    setImageUrl(url);
+    setShow(true);
+  };
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -59,7 +59,11 @@ const Page = () => {
               alt={"again1"}
               width={300}
               height={450}
-              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076116/23%20NEELTJE%202021%204%20-%20again%20and%20again%20and%20again/2021-04-15_19.44.21_bapt0x.jpg")}
+              onClick={() =>
+                showModal(
+                  "https://res.cloudinary.com/dwgsproch/image/upload/v1710076116/23%20NEELTJE%202021%204%20-%20again%20and%20again%20and%20again/2021-04-15_19.44.21_bapt0x.jpg",
+                )
+              }
             />
           </div>
           <div className="">
@@ -70,7 +74,11 @@ const Page = () => {
               alt={"again3"}
               width={300}
               height={450}
-              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076116/23%20NEELTJE%202021%204%20-%20again%20and%20again%20and%20again/2021-04-15_19.44.21_bapt0x.jpg")}
+              onClick={() =>
+                showModal(
+                  "https://res.cloudinary.com/dwgsproch/image/upload/v1710076116/23%20NEELTJE%202021%204%20-%20again%20and%20again%20and%20again/2021-04-15_19.44.21_bapt0x.jpg",
+                )
+              }
             />
           </div>
           <div className="">
@@ -81,7 +89,11 @@ const Page = () => {
               alt={"again4"}
               width={300}
               height={450}
-              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076106/23%20NEELTJE%202021%204%20-%20again%20and%20again%20and%20again/2021-04-15_19.38.35_nixpem.jpg")}
+              onClick={() =>
+                showModal(
+                  "https://res.cloudinary.com/dwgsproch/image/upload/v1710076106/23%20NEELTJE%202021%204%20-%20again%20and%20again%20and%20again/2021-04-15_19.38.35_nixpem.jpg",
+                )
+              }
             />
           </div>
           <div className="">
@@ -92,7 +104,11 @@ const Page = () => {
               alt={"again2"}
               width={300}
               height={225}
-              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076103/23%20NEELTJE%202021%204%20-%20again%20and%20again%20and%20again/2021-04-15_19.39.51_eqss6n.jpg")}
+              onClick={() =>
+                showModal(
+                  "https://res.cloudinary.com/dwgsproch/image/upload/v1710076103/23%20NEELTJE%202021%204%20-%20again%20and%20again%20and%20again/2021-04-15_19.39.51_eqss6n.jpg",
+                )
+              }
             />
           </div>
         </div>
@@ -109,7 +125,11 @@ const Page = () => {
           </video>
         </div>
       )}
-      <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
+      <ImagePopUp
+        hideDialog={() => setShow(false)}
+        imageUrl={imageUrl}
+        show={show}
+      />
     </div>
   );
 };

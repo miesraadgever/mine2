@@ -8,7 +8,10 @@ export default {
     neeltje: "neeltje de jong",
     mi_ne: "mies raadgever & neeltje de jong",
     aanvraag: "available upon request",
-    prijsaanvraag: "price on request"
+    prijsaanvraag: "price on request",
+    close: "close",
+    zoom: "click and scroll to zoom",
+    zoomMobile: "drag and enlarge to zoom",
   },
   about: {
     paragraph1:
@@ -45,7 +48,8 @@ export default {
     neeltjeVertoning6:
       "Mode collection ‘shanti’, Wilminktheater Enschede, 2016",
     neeltjeVertoning7: "Duo-exhibition HOEK, Nijverheid Utrecht, 2024",
-    mineVertoning1: "Screening Melancholy Archive, Voormalig Pieter Baan Centrum Utrecht, 2024",
+    mineVertoning1:
+      "Screening Melancholy Archive, Voormalig Pieter Baan Centrum Utrecht, 2024",
   },
   audio: {
     caption: "exploration through sound",
@@ -198,27 +202,30 @@ export default {
   stageigor: {
     caption: "stage design for performances of igor herder's kind aan zee",
     caption2: "at melkweg amsterdam, roodkapje rotterdam and tivoli utrecht",
-    extracredits: "In collaboration with"
+    extracredits: "In collaboration with",
   },
   melancholy: {
-    caption: "Melancholy Archive, born out of intuitive canvas painting in 2021, intertwines various elements. \n",
-    caption2: "The text, like a scream in the background, resides behind the embodiment of emptiness. Captured in thoughts and expectations, portraying the duality of feminine aggression.\n"+
-        "Melancholy Archive extends beyond a single moment. The canvas translated into a performance, executed by Mies and Neeltje in 2024.\n" +
-        "We wear the white clothing, which is crafted and inspired in the same way as the canvas. Similar to the canvas, we intuitively manipulate these with spray paint, paint, and markers. Filling the emptiness with gestures that symbolize the internal screams.\n",
-    caption3: "This performance has been captured on film, grasping the atmosphere by portraying fragments of suppressed thoughts. These resurface as text on screen and audio.",
+    caption:
+      "Melancholy Archive, born out of intuitive canvas painting in 2021, intertwines various elements. \n",
+    caption2:
+      "The text, like a scream in the background, resides behind the embodiment of emptiness. Captured in thoughts and expectations, portraying the duality of feminine aggression.\n" +
+      "Melancholy Archive extends beyond a single moment. The canvas translated into a performance, executed by Mies and Neeltje in 2024.\n" +
+      "We wear the white clothing, which is crafted and inspired in the same way as the canvas. Similar to the canvas, we intuitively manipulate these with spray paint, paint, and markers. Filling the emptiness with gestures that symbolize the internal screams.\n",
+    caption3:
+      "This performance has been captured on film, grasping the atmosphere by portraying fragments of suppressed thoughts. These resurface as text on screen and audio.",
     screening: "click here for images of the screening of Melancholy Archive",
-    creditsSound: "sound (selby wall & ptolemaea)"
+    creditsSound: "sound (selby wall & ptolemaea)",
   },
   screening: {
     caption: "screening and exposition of melancholy archive",
-    date: "22 march 2024 at former pieter baan centre utrecht"
+    date: "22 march 2024 at former pieter baan centre utrecht",
   },
   doek: {
     caption: "canvas 3x6 meter",
     illustratie: "illustration",
-    tekst: "text"
+    tekst: "text",
   },
   cc: {
-    caption: "i.e. patchwork jeans, sketchbook jeans"
-  }
+    caption: "i.e. patchwork jeans, sketchbook jeans",
+  },
 };

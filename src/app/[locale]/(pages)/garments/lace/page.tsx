@@ -1,24 +1,23 @@
 "use client";
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useI18n } from "../../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import { CldImage } from "next-cloudinary";
 import ImagePopUp from "@/components/ImagePopUp";
 
-
 const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
-  const [imageUrl, setImageUrl] = useState("")
-  const [show, setShow] = useState(false)
+  const [imageUrl, setImageUrl] = useState("");
+  const [show, setShow] = useState(false);
 
   const showModal = (url: string) => {
-    setImageUrl(url)
-    setShow(true)
-  }
+    setImageUrl(url);
+    setShow(true);
+  };
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -61,8 +60,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712573590/neeltje%20-%20garments:%20lace%20skirt/2023-09-06_10.41.47_wmqbxm.jpg")}
-
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712573590/neeltje%20-%20garments:%20lace%20skirt/2023-09-06_10.41.47_wmqbxm.jpg",
+              )
+            }
           />
           <CldImage
             src={
@@ -72,8 +74,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712520919/neeltje%20-%20garments:%20lace%20skirt/Foto_29-10-2023_12_10_17_ajfqgg.jpg")}
-
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712520919/neeltje%20-%20garments:%20lace%20skirt/Foto_29-10-2023_12_10_17_ajfqgg.jpg",
+              )
+            }
           />
           <CldImage
             src={
@@ -83,8 +88,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712520925/neeltje%20-%20garments:%20lace%20skirt/Foto_29-10-2023_12_10_09_ysbupf.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712520925/neeltje%20-%20garments:%20lace%20skirt/Foto_29-10-2023_12_10_09_ysbupf.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712520912/neeltje%20-%20garments:%20lace%20skirt/Foto_15-09-2023_17_33_33_rjaiwq.jpg"
@@ -93,8 +102,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712520912/neeltje%20-%20garments:%20lace%20skirt/Foto_15-09-2023_17_33_33_rjaiwq.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712520912/neeltje%20-%20garments:%20lace%20skirt/Foto_15-09-2023_17_33_33_rjaiwq.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712574146/neeltje%20-%20garments:%20lace%20skirt/2023-09-15_15.18.531_yh0irc.jpg"
@@ -103,8 +116,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712574146/neeltje%20-%20garments:%20lace%20skirt/2023-09-15_15.18.531_yh0irc.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712574146/neeltje%20-%20garments:%20lace%20skirt/2023-09-15_15.18.531_yh0irc.jpg",
+              )
+            }
+          />
         </div>
       </div>
       {/* Grote afbeelding rechts  */}
@@ -119,7 +136,11 @@ const Page = () => {
           />
         </div>
       )}
-            <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
+      <ImagePopUp
+        hideDialog={() => setShow(false)}
+        imageUrl={imageUrl}
+        show={show}
+      />
     </div>
   );
 };

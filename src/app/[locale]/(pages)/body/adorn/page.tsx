@@ -1,6 +1,6 @@
 "use client";
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useI18n } from "../../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
@@ -11,13 +11,13 @@ const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
-  const [imageUrl, setImageUrl] = useState("")
-  const [show, setShow] = useState(false)
+  const [imageUrl, setImageUrl] = useState("");
+  const [show, setShow] = useState(false);
 
   const showModal = (url: string) => {
-    setImageUrl(url)
-    setShow(true)
-  }
+    setImageUrl(url);
+    setShow(true);
+  };
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -68,7 +68,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712752486/neeltje%20-%20sgw:%20adorn/2020-04-19_16.17.47-1_ga54r4_dhzswk.jpg")}
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712752486/neeltje%20-%20sgw:%20adorn/2020-04-19_16.17.47-1_ga54r4_dhzswk.jpg",
+              )
+            }
           />
           <CldImage
             src={
@@ -78,7 +82,11 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712752383/neeltje%20-%20sgw:%20adorn/WhatsApp_Image_2022-02-01_at_17.31.57_d3qmuy.jpg")}
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712752383/neeltje%20-%20sgw:%20adorn/WhatsApp_Image_2022-02-01_at_17.31.57_d3qmuy.jpg",
+              )
+            }
           />
         </div>
       </div>
@@ -94,7 +102,11 @@ const Page = () => {
           </video>
         </div>
       )}
-            <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
+      <ImagePopUp
+        hideDialog={() => setShow(false)}
+        imageUrl={imageUrl}
+        show={show}
+      />
     </div>
   );
 };

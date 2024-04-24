@@ -1,6 +1,6 @@
 "use client";
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useI18n } from "../../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
@@ -11,13 +11,13 @@ const Page = () => {
   const t = useI18n();
   const windowSize = useWindowSize();
   const smallScreen = windowSize.width! < 800;
-  const [imageUrl, setImageUrl] = useState("")
-  const [show, setShow] = useState(false)
+  const [imageUrl, setImageUrl] = useState("");
+  const [show, setShow] = useState(false);
 
   const showModal = (url: string) => {
-    setImageUrl(url)
-    setShow(true)
-  }
+    setImageUrl(url);
+    setShow(true);
+  };
 
   return (
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
@@ -64,8 +64,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712520380/34%20NEELTJE%202022%206%20-%20she%20%27otw%20jurk/Foto_06-04-2024_15_57_22_glxtfh.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712520380/34%20NEELTJE%202022%206%20-%20she%20%27otw%20jurk/Foto_06-04-2024_15_57_22_glxtfh.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712520375/34%20NEELTJE%202022%206%20-%20she%20%27otw%20jurk/Foto_06-04-2024_15_57_41_uc6qek.jpg"
@@ -74,8 +78,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712520375/34%20NEELTJE%202022%206%20-%20she%20%27otw%20jurk/Foto_06-04-2024_15_57_41_uc6qek.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712520375/34%20NEELTJE%202022%206%20-%20she%20%27otw%20jurk/Foto_06-04-2024_15_57_41_uc6qek.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712520455/34%20NEELTJE%202022%206%20-%20she%20%27otw%20jurk/Foto_06-04-2024_16_12_51_tb32q9.jpg"
@@ -84,8 +92,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712520455/34%20NEELTJE%202022%206%20-%20she%20%27otw%20jurk/Foto_06-04-2024_16_12_51_tb32q9.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712520455/34%20NEELTJE%202022%206%20-%20she%20%27otw%20jurk/Foto_06-04-2024_16_12_51_tb32q9.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712520468/34%20NEELTJE%202022%206%20-%20she%20%27otw%20jurk/Foto_06-04-2024_16_08_41_p9jawy.jpg"
@@ -94,8 +106,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712520468/34%20NEELTJE%202022%206%20-%20she%20%27otw%20jurk/Foto_06-04-2024_16_08_41_p9jawy.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712520468/34%20NEELTJE%202022%206%20-%20she%20%27otw%20jurk/Foto_06-04-2024_16_08_41_p9jawy.jpg",
+              )
+            }
+          />
           <CldImage
             src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1712524047/34%20NEELTJE%202022%206%20-%20she%20%27otw%20jurk/2022-12-28_17.05.13_q7bvwq.jpg"
@@ -104,8 +120,12 @@ const Page = () => {
             width={300}
             height={400}
             className="w-72 h-86 object-cover"
-            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1712524047/34%20NEELTJE%202022%206%20-%20she%20%27otw%20jurk/2022-12-28_17.05.13_q7bvwq.jpg")}
-            />
+            onClick={() =>
+              showModal(
+                "https://res.cloudinary.com/dwgsproch/image/upload/v1712524047/34%20NEELTJE%202022%206%20-%20she%20%27otw%20jurk/2022-12-28_17.05.13_q7bvwq.jpg",
+              )
+            }
+          />
         </div>
       </div>
       {/* Grote afbeelding rechts  */}
@@ -120,8 +140,11 @@ const Page = () => {
           />
         </div>
       )}
-            <ImagePopUp hideDialog={() => setShow(false)} imageUrl={imageUrl} show={show} />
-
+      <ImagePopUp
+        hideDialog={() => setShow(false)}
+        imageUrl={imageUrl}
+        show={show}
+      />
     </div>
   );
 };
