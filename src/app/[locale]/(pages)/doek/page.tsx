@@ -38,7 +38,7 @@ const Page = () => {
             {t("doek.tekst")} <i>{t("general.neeltje")} </i>
             <br />
             <br />
-            <i>3.2021</i>
+            3.2021
           </p>
         </div>
         {/* Grote afbeelding rechts  */}

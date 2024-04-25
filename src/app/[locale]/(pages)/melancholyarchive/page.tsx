@@ -36,7 +36,7 @@ const Page = () => {
             <br />
             <br />
             <i>
-              <Link href={"melancholyarchive/screening"}>
+              <Link href={"melancholyarchive/screening"} className={"underline"}>
                 {t("melancholy.screening")}
               </Link>
             </i>
@@ -49,7 +49,7 @@ const Page = () => {
             <i> ethel cain</i>
             <br />
             <br />
-            <i>3.2024</i>
+            3.2024
           </p>
         </div>
         {/* Grote afbeelding rechts  */}
@@ -57,7 +57,7 @@ const Page = () => {
           <div className={"col-12 justify-center flex"}>
             <div className="flex ">
               <iframe
-                src="https://www.youtube.com/embed/qPe06K-rV1Q?si=5jZ0mw2AoBIGYuNV&autoplay=1"
+                src="https://www.youtube.com/embed/qPe06K-rV1Q?si=5jZ0mw2AoBIGYuNV"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -141,7 +141,7 @@ const Page = () => {
       {!smallScreen && (
         <div className={`fixed right-0 justify-end flex col-6`}>
           <iframe
-            src="https://www.youtube.com/embed/qPe06K-rV1Q?si=5jZ0mw2AoBIGYuNV&autoplay=1"
+            src="https://www.youtube.com/embed/qPe06K-rV1Q?si=5jZ0mw2AoBIGYuNV"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

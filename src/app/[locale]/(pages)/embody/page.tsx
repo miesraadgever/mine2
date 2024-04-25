@@ -39,7 +39,7 @@ const Page = () => {
         {/* Grote afbeelding rechts  */}
         {smallScreen && (
           <div className={"col-12 justify-center flex"}>
-            <video className={""} width="600" height="700" loop muted autoPlay>
+            <video className={""} width="600" height="700" loop muted autoPlay playsInline>
               <source
                 src={
                   "https://res.cloudinary.com/dwgsproch/video/upload/v1712755516/29%20NEELTJE%202021%2010%20-%20embody%3B%20feel%20-%20come%20back%20-%20do%20not%20perceive%20me/fe64bbf2-a82a-4115-91b9-e5ff2f581167_twd4oi.mp4"

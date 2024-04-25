@@ -12,14 +12,16 @@ export default {
     close: "close",
     zoom: "click and scroll to zoom",
     zoomMobile: "drag and enlarge to zoom",
+    terug: "<- back to overview"
   },
   about: {
     paragraph1:
-      "Started in 2020 as a fashion brand, called mi_ne (pronounced: /'mini'/), mies raadgever and neeltje de jong explored more than just clothing. From here developed mi_ne movement; an interdisciplinary collective.",
+      "Started in 2020 as a fashion brand, called mi_ne (pronounced: /'mini'/), Mies raadgever and Neeltje de jong explored more than just clothing. From here developed mi_ne movement; an interdisciplinary collective.",
     paragraph2:
-      "Within mi_ne movement, mies and neeltje explore themes such as duality, feminine rage, and bodily expression, among others. These themes are brought to form in projects ranging from audiovisual works to paintings, to texts, and back to clothing, both mystically and confrontationally.",
+      "Within mi_ne movement, Mies and Neeltje explore themes such as duality, feminine rage, and bodily expression, among others. These themes are brought to form in projects ranging from audiovisual works to paintings, to texts, and back to clothing, both mystically and confrontationally.",
     paragraph3:
       "On our personal pages, you can find more about our individual projects;",
+    paragraph4: "Feel free to contact us, we are open for collaborations as a collective and/or individually;",
     miesParagraph1: "Mies works as a visual artist and designer.",
     miesParagraph2:
       "`Educated as a graphic designer, I began abstractly representing concepts. Gradually, my practice shifted more towards exploring the boundaries between digital and analog work.`",

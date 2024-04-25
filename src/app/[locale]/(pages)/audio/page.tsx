@@ -21,7 +21,9 @@ const Page = () => {
         <p className="mt-3">
           {t("audio.caption")}
           <br></br>
-          <a href="https://soundcloud.com/mies-neeltje" target="_blank">
+          <a href="https://soundcloud.com/mies-neeltje" target="_blank" className={
+            "underline"
+          }>
             {t("audio.listen")}
           </a>
           <br />
@@ -29,7 +31,7 @@ const Page = () => {
           {t("general.credits")} <i>{t("general.mies")}</i>
           <br />
           <br />
-          <i>{t("general.ongoing")}</i>
+          {t("general.ongoing")}
         </p>
       </div>
 

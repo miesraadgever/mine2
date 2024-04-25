@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import { CldImage } from "next-cloudinary";
 import ImagePopUp from "@/components/ImagePopUp";
+import Link from "next/link";
 
 const Page = () => {
   const t = useI18n();
@@ -31,6 +32,10 @@ const Page = () => {
             <br />
             <br />
             9.2021
+            <br />
+            <br />
+            <Link href={"/garments"} className={"underline"}> {t("general.terug")}</Link>
+
           </p>
         </div>
         {/* Grote afbeelding rechts  */}

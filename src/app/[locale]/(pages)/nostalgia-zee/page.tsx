@@ -24,14 +24,14 @@ const Page = () => {
             {t("general.credits")} <i>{t("general.mi_ne")}</i>
             <br />
             <br />
-            <i>12.2020</i>
+            12.2020
           </p>
         </div>
         {/* Grote afbeelding rechts  */}
         {smallScreen && (
           <div className={"col-12 justify-center flex"}>
             <div className="flex ">
-              <video loop muted autoPlay controls>
+              <video loop muted autoPlay controls playsInline>
                 <source
                   src={
                     "https://res.cloudinary.com/dwgsproch/video/upload/v1712757836/13%20MI_NE%202021%201%20-%20nostalgia%20ultra%20%5Bzee%5D/edit_gtfzvm.mp4"

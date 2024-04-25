@@ -27,8 +27,13 @@ const Page = () => {
             <br />
             {t("about.paragraph3")}
             <br />
-            <Link href={"/mies"}>Mies Raadgever</Link>,{" "}
-            <Link href={"/neeltje"}>Neeltje de Jong</Link>
+            <Link href={"/mies"} className={"underline"}>Mies Raadgever</Link><br />
+            <Link href={"/neeltje"} className="underline">Neeltje de Jong</Link>
+            <br />
+            <br />
+            {t("about.paragraph4")}
+            <br />
+            miesneeltje@gmail.com
           </div>
         </div>
         <div
@@ -66,7 +71,7 @@ const Page = () => {
           </p>
         </div>
         {smallScreen && (
-          <div className="flex col-12 flex-row  gap-10 justify-start pl-5">
+          <div className="flex col-12 flex-col  gap-10 justify-start pl-5">
             <div className="text-sm ">
               <i>
                 <a
@@ -115,7 +120,7 @@ const Page = () => {
           </p>
         </div>
         {smallScreen && (
-          <div className="flex col-12 flex-row gap-10 justify-start pl-5">
+          <div className="flex col-12 flex-col gap-10 justify-start pl-5">
             <div className="text-sm">
               <i>
                 <a

@@ -26,25 +26,23 @@ const Page = () => {
             {t("waas.visuals")} <i>{t("general.mies")}</i>
             <br />
             <br />
-            <i>9.2021</i>
+            9.2021
           </p>
         </div>
         {/* Grote afbeelding rechts  */}
         {smallScreen && (
-          <div className={"col-12 justify-center flex"}>
-            <div className="flex ">
-              <iframe
-                width="960"
-                height="615"
-                src="https://www.youtube.com/embed/ULmiVXUV8AM?si=1mNU6Kkue2dJ336F"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+            <div className={"col-12 justify-center flex"}>
+              <div className="flex ">
+                <iframe
+                    src="https://www.youtube.com/embed/ULmiVXUV8AM?si=1mNU6Kkue2dJ336F"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                ></iframe>
+              </div>
             </div>
-          </div>
         )}
         {/* Images */}
         <div

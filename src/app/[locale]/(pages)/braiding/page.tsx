@@ -39,20 +39,18 @@ const Page = () => {
         </div>
         {/* Grote afbeelding rechts  */}
         {smallScreen && (
-          <div className={"col-12 justify-center flex"}>
-            <div className="flex ">
-              <iframe
-                width="960"
-                height="615"
-                src="https://www.youtube.com/embed/qhyGragg0AI?si=6XMnu9EWSJ0ArKIj&autoplay=1"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+            <div className={"col-12 justify-center flex"}>
+              <div className="flex ">
+                <iframe
+                    src="https://www.youtube.com/embed/qhyGragg0AI?si=6XMnu9EWSJ0ArKIj&autoplay=1"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                ></iframe>
+              </div>
             </div>
-          </div>
         )}
         {/* Images */}
         <div

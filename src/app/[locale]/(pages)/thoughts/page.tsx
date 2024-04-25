@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
-import { CldImage } from "next-cloudinary";
-import ImagePopUp from "@/components/ImagePopUp";
 import HDImage from "@/components/HDImage";
 
 const Page = () => {
@@ -34,7 +32,7 @@ const Page = () => {
             {t("thoughts.klik")}
             <br />
             <br />
-            <i>6.2022</i>
+            6.2022
           </p>
         </div>
         {/* Grote afbeelding rechts  */}

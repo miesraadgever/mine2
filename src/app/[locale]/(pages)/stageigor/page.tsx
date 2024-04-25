@@ -36,6 +36,7 @@ const Page = () => {
             <br></br>
             {t("general.credits")} <i>{t("general.mies")} & igor herder</i>
             <br></br>
+            <br></br>
             4.2023
           </p>
         </div>
@@ -43,7 +44,7 @@ const Page = () => {
         {smallScreen && (
           <div className={"col-12 justify-center flex"}>
             <div className="flex ">
-              <video loop muted autoPlay>
+              <video loop muted autoPlay playsInline>
                 <source
                   src={
                     "https://res.cloudinary.com/dwgsproch/video/upload/v1712235572/MIES%20-%20stagedesign/IMG_3513_d4v1ls.mp4"

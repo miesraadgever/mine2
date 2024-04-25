@@ -34,7 +34,7 @@ const Page = () => {
             {t("general.credits")} <i>{t("general.neeltje")}</i>
             <br />
             <br />
-            <i>2.2018</i>
+            2.2018
           </p>
         </div>
         {/* Grote afbeelding rechts  */}
@@ -56,21 +56,21 @@ const Page = () => {
         <div
           className={`flex-wrap flex gap-2 mt-10 ${smallScreen ? " justify-center" : "ml-6 justify-start"}`}
         >
-          <video className={""} width="220" height="200" loop muted autoPlay>
+          <video className={""} width="220" height="200" loop muted autoPlay playsInline>
             <source
               src={
                 "https://res.cloudinary.com/dwgsproch/video/upload/v1709925368/2%20NEELTJE%202018%202%20-%20droom%20archief/1.mp4"
               }
             ></source>
           </video>
-          <video className={""} width="220" height="200" loop muted autoPlay>
+          <video className={""} width="220" height="200" loop muted autoPlay playsInline>
             <source
               src={
                 "https://res.cloudinary.com/dwgsproch/video/upload/v1709925368/2%20NEELTJE%202018%202%20-%20droom%20archief/2.mp4"
               }
             ></source>
           </video>
-          <video className={""} width="220" height="200" loop muted autoPlay>
+          <video className={""} width="220" height="200" loop muted autoPlay playsInline>
             <source
               src={
                 "https://res.cloudinary.com/dwgsproch/video/upload/v1709925368/2%20NEELTJE%202018%202%20-%20droom%20archief/3.mp4"

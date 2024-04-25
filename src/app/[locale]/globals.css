@@ -68,4 +68,11 @@ iframe {
     margin: 3px 3px 3px 3px;
 }
 
+.underline {
+    color: darkgray;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
 

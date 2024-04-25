@@ -36,7 +36,7 @@ const Page = () => {
             <i> mies raadgever & neeltje de jong</i>
             <br />
             <br />
-            <i>1.2021</i>
+            1.2021
           </p>
         </div>
         {/* Grote afbeelding rechts  */}

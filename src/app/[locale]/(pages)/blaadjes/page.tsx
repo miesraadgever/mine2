@@ -30,7 +30,7 @@ const Page = () => {
             <br /> <br />
             {t("general.credits")} <i>{t("general.neeltje")}</i>
             <br /> <br />
-            <i>11.2018</i>
+            11.2018
           </p>
         </div>
         {/* Grote afbeelding rechts  */}

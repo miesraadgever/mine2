@@ -53,7 +53,7 @@ const Gallery: React.FC<GalleryProps> = ({ results, fetchFolders, video }) => {
   return (
     <>
       <div className={"relative w-[95%] max-w-6xl mx-auto overflow-hidden"}>
-        <video className={"w-full"} loop muted autoPlay>
+        <video className={"w-full"} loop muted autoPlay playsInline>
           <source
             src={
               "https://res.cloudinary.com/dwgsproch/video/upload/v1709815707/homevideo/edithomepage012023-2_kwcapn.mp4"

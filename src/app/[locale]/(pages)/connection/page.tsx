@@ -37,13 +37,13 @@ const Page = () => {
             {t("general.credits")} <i>{t("general.neeltje")}</i>
             <br />
             <br />
-            <i>1.2021</i>
+            1.2021
           </p>
         </div>
         {/* Grote afbeelding rechts  */}
         {smallScreen && (
           <div className={"col-12 justify-center flex"}>
-            <video className={""} width="700" height="200" controls autoPlay>
+            <video className={""} width="700" height="200" controls>
               <source
                 src={
                   "https://res.cloudinary.com/dwgsproch/video/upload/v1709933082/15%20NEELTJE%202021%201%20-%20excerpts%20of%20connection/onderaan_full_video_met_geluid_op_website-_niet_autoplay_dan_g6smfb.mp4"
@@ -74,8 +74,9 @@ const Page = () => {
               "https://res.cloudinary.com/dwgsproch/image/upload/v1709931648/15%20NEELTJE%202021%201%20-%20excerpts%20of%20connection/2021-01-29_15.27.00_gkurc9.jpg"
             }
             alt={"conn2"}
-            width={300}
-            height={450}
+            width={450}
+            height={650}
+            className={"object-cover h-80 w-80"}
             onClick={() =>
               showModal(
                 "https://res.cloudinary.com/dwgsproch/image/upload/v1709931648/15%20NEELTJE%202021%201%20-%20excerpts%20of%20connection/2021-01-29_15.27.00_gkurc9.jpg",
@@ -100,7 +101,7 @@ const Page = () => {
       {/* Grote afbeelding rechts  */}
       {!smallScreen && (
         <div className={`fixed right-0 justify-end flex col-6`}>
-          <video className={""} width="700" height="200" controls autoPlay>
+          <video className={""} width="700" height="200" controls>
             <source
               src={
                 "https://res.cloudinary.com/dwgsproch/video/upload/v1709933082/15%20NEELTJE%202021%201%20-%20excerpts%20of%20connection/onderaan_full_video_met_geluid_op_website-_niet_autoplay_dan_g6smfb.mp4"

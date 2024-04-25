@@ -12,8 +12,8 @@ const Page = () => {
   const smallScreen = windowSize.width! < 800;
 
   return (
-    <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
-      <div className={`flex flex-col ${smallScreen ? "col-12" : "col-6"}`}>
+      <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
+        <div className={`flex flex-col ${smallScreen ? "col-12" : "col-6"}`}>
         {/* Text */}
         <div className={`${smallScreen ? "ml-2 mb-4" : "p-6 mb-4"} `}>
           <h3 className="font-medium text-xl">SADGIRLWEARABLES; BODY</h3>
@@ -25,13 +25,11 @@ const Page = () => {
             {t("general.ongoing")}
           </p>
         </div>
+        </div>
 
         {/* Images */}
-        <div
-          className={`fixed right-2 justify-end flex col-6 flex-wrap flex gap-2 mt-10 ${smallScreen ? " justify-center" : "ml-6 justify-start"}`}
-        >
+        <div className={`flex-wrap flex flex-row gap-2 mt-10 ${smallScreen ? " justify-center col-12" : " justify-start col-6"}`}>
           <a href="/body/choker">
-            {" "}
             <div className="">
               <CldImage
                 src={
@@ -88,7 +86,7 @@ const Page = () => {
           </a>
         </div>
       </div>
-    </div>
+
   );
 };
 

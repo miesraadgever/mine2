@@ -5,6 +5,7 @@ import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import { CldImage } from "next-cloudinary";
+import Link from "next/link";
 
 const Page = () => {
   const t = useI18n();

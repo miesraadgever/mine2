@@ -33,14 +33,14 @@ const Page = () => {
             {t("nwaad.tech")} <i>{t("nwaad.bart")}</i>
             <br />
             <br />
-            <i>4.2021</i>
+            4.2021
           </p>
         </div>
         {/* Grote afbeelding rechts  */}
         {smallScreen && (
           <div className={"col-12 justify-center flex"}>
             <div className="flex ">
-              <video loop muted autoPlay>
+              <video loop muted autoPlay playsInline>
                 <source
                   src={
                     "https://res.cloudinary.com/dwgsproch/video/upload/v1712755904/21%20MI_NE%20-%20NWAA/film_hrdgwb.mp4"

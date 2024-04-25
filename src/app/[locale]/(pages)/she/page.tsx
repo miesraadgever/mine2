@@ -31,15 +31,16 @@ const Page = () => {
             {t("she.subcaption1")}
             <br /> {t("she.subcaption2")}
             <br />
-            <br />-{" "}
+            <br />
             <a
               href="https://www.youtube.com/watch?v=tNxpRpfeSaI"
               target="_blank"
+              className={"underline"}
             >
               <i>{t("she.link")}</i>
             </a>{" "}
-            <br /> -{" "}
-            <a href="/she/cdboekje">
+            <br />
+            <a href="/she/cdboekje" className={"underline"}>
               <i>{t("she.linkboekje")}</i>
             </a>
             <br />

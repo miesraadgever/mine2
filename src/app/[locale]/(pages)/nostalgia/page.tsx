@@ -36,14 +36,14 @@ const Page = () => {
             {t("nostalgia.model")} <i>{t("nostalgia.loek")}</i>
             <br />
             <br />
-            <i>1.2021</i>
+            1.2021
           </p>
         </div>
         {/* Grote afbeelding rechts  */}
         {smallScreen && (
           <div className={"col-12 justify-center flex"}>
             <div className="flex ">
-              <video loop muted autoPlay controls>
+              <video loop controls>
                 <source
                   src={
                     "https://res.cloudinary.com/dwgsproch/video/upload/v1712758215/14%20MI_NE%202021%201%20-%20nostalgia%20ultra%20%5Bshoot%5D/nostalgia_xz7ymn.mp4"
@@ -126,7 +126,7 @@ const Page = () => {
       {/* Grote afbeelding rechts  */}
       {!smallScreen && (
         <div className={`fixed right-0 justify-end flex col-6`}>
-          <video loop muted autoPlay controls>
+          <video loop controls>
             <source
               src={
                 "https://res.cloudinary.com/dwgsproch/video/upload/v1712758215/14%20MI_NE%202021%201%20-%20nostalgia%20ultra%20%5Bshoot%5D/nostalgia_xz7ymn.mp4"
