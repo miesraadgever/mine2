@@ -103,8 +103,8 @@ export default {
   garments: {
     caption:
       "select one of the photos for more information and images of the designs",
-    angel: "tule dress & pants with bleach drawings",
-    top: "freehand knitted top in collaboration with",
+    angel: "tulle dress & pants with bleach drawings",
+    top: "handknitmachine knitted top in collaboration with",
     rok: "free expression skirt in collaboration with",
     alex: "alexandra polakova",
     niels: "niels matitawaer",
@@ -168,11 +168,11 @@ export default {
   she: {
     caption: "‘she of the water’ a short film",
     subcaption:
-      "it is a story about processing, returning to ones body, in which the tactility of the water and the act of braiding play a major role",
+      "it is a story about processing, returning to ones body, in which the tactility of the water and the act of braiding play a major role.",
     subcaption1:
-      "the film is the visual elaboration of texts I wrote during my fine arts master’s Practice Held in Common, ArtEZ",
+      "the film is the visual elaboration of texts I wrote during my fine arts master’s Practice Held in Common, ArtEZ.",
     subcaption2:
-      "the texts function as subliminals [lyrics] to the film, allowing the viewer to sense when and if they will read them",
+      "the texts function as subliminals [lyrics] to the film, allowing the viewer to sense when and if they will read them.",
     subcaption3:
       "‘she of the water’ was part of the group exhibition “Hello world” in the Historische kelders, Rozet Arnhem, June 2022",
     link: "click here to view a fragment of the film",
@@ -185,7 +185,7 @@ export default {
   ciggies: {
     caption: "first set of beaded cigarettes, made in 2022",
     subcaption:
-      "beaded cigarettes in tule bag embroidered with a cross out of dried flowers, created in January 2024 for the duo exhibition at HOEK Nijverheid",
+      "beaded cigarettes in tulle bag embroidered with a cross out of dried flowers, created in January 2024 for the duo exhibition at HOEK Nijverheid",
   },
   kerkraam: {
     caption: "set of church window frames",
@@ -204,19 +204,18 @@ export default {
   stageigor: {
     caption: "stage design for performances of igor herder's kind aan zee",
     caption2: "at melkweg amsterdam, roodkapje rotterdam and tivoli utrecht",
-    extracredits: "In collaboration with",
+    extracredits: "in collaboration with"
   },
   melancholy: {
-    caption:
-      "Melancholy Archive, born out of intuitive canvas painting in 2021, intertwines various elements. \n",
-    caption2:
-      "The text, like a scream in the background, resides behind the embodiment of emptiness. Captured in thoughts and expectations, portraying the duality of feminine aggression.\n" +
-      "Melancholy Archive extends beyond a single moment. The canvas translated into a performance, executed by Mies and Neeltje in 2024.\n" +
-      "We wear the white clothing, which is crafted and inspired in the same way as the canvas. Similar to the canvas, we intuitively manipulate these with spray paint, paint, and markers. Filling the emptiness with gestures that symbolize the internal screams.\n",
-    caption3:
-      "This performance has been captured on film, grasping the atmosphere by portraying fragments of suppressed thoughts. These resurface as text on screen and audio.",
-    screening: "click here for images of the screening of Melancholy Archive",
-    creditsSound: "sound (selby wall & ptolemaea)",
+    caption: "'melancholy archive', born out of intuitive canvas painting in 2021, intertwines various elements. \n",
+    caption2: "the text, like a scream in the background, resides behind the embodiment of emptiness",
+    caption21: "captured in thoughts and expectations, portraying the duality of feminine aggression.",
+    caption22: "'melancholy archive' extends beyond a single moment; the canvas translated into a performance, executed by mies and neeltje in 2024.",
+    caption23: "we wear the white clothing, which is crafted and inspired in the same way as the canvas",
+    caption24: "similar to the canvas, we intuitively manipulate these garments with spray paint, paint, and markers; filling the emptiness with gestures that symbolize the internal screams.",
+    caption3: "this performance has been captured on film, grasping the atmosphere by portraying fragments of suppressed thoughts, these resurface as text on screen and audio.",
+    screening: "click here for images of the screening of 'melancholy archive'",
+    creditsSound: "sound (selby wall & ptolemaea)"
   },
   screening: {
     caption: "screening and exposition of melancholy archive",
@@ -224,8 +223,9 @@ export default {
   },
   doek: {
     caption: "canvas 3x6 meter",
-    illustratie: "illustration",
-    tekst: "text",
+    subcaption: "click here to see the sequel 'melancholy archive'",
+    illustratie: "figure",
+    tekst: "text"
   },
   cc: {
     caption: "i.e. patchwork jeans, sketchbook jeans",

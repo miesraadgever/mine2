@@ -29,7 +29,7 @@ const Page = () => {
             <i>{t("general.neeltje")}</i> {t("thoughts.caption2")}
             <br />
             <br />
-            {t("thoughts.klik")}
+            <i>{t("thoughts.klik")}</i>
             <br />
             <br />
             6.2022

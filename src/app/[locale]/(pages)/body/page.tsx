@@ -2,7 +2,6 @@
 
 import React from "react";
 import { useI18n } from "../../../../../translations/client";
-import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import { CldImage } from "next-cloudinary";
 

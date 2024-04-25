@@ -25,6 +25,9 @@ const Page = () => {
           </a>
           <br></br>
           <br></br>
+          {t("general.credits")} <i>{t("general.mies")}</i>
+          <br></br>
+          <br></br>
           {t("general.ongoing")}
         </p>
       </div>
