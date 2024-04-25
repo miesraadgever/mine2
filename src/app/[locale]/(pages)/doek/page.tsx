@@ -4,6 +4,7 @@ import React, {useState} from "react";
 import { useI18n } from "../../../../../translations/client";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import {CldImage} from "next-cloudinary";
+import Link from "next/link";
 import ImagePopUp from "@/components/ImagePopUp";
 
 const Page = () => {
@@ -26,8 +27,9 @@ const Page = () => {
                     <h3 className="font-medium text-xl">DOEK</h3>
                     <p className="mt-3">
                         {t("doek.caption")}
-                        <br />
-                        <br />
+                        <br /><br />
+                        <i><Link href={"/melancholyarchive"} className= "underline"> {t("doek.subcaption")}</Link></i>
+                        <br /><br />
                         {t("general.credits")} <i>{t("general.mies")} & {t("general.neeltje")}</i>
                         <br />
                         {t("doek.illustratie")} <i>{t("general.mies")} </i>

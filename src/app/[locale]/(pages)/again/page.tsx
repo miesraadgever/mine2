@@ -70,7 +70,7 @@ const Page = () => {
               alt={"again3"}
               width={300}
               height={450}
-              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076116/23%20NEELTJE%202021%204%20-%20again%20and%20again%20and%20again/2021-04-15_19.44.21_bapt0x.jpg")}
+              onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710076118/23%20NEELTJE%202021%204%20-%20again%20and%20again%20and%20again/2021-04-15_19.42.29_wntuc9.jpg")}
             />
           </div>
           <div className="">

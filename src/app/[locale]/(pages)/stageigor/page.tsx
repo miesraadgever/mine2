@@ -34,7 +34,7 @@ const Page = () => {
                         {t("stageigor.extracredits")} <i> sire mane, bird guy & clay krebbers</i>
                         <br></br>
                         {t("general.credits")} <i>{t("general.mies")} & igor herder</i>
-                        <br></br>
+                        <br /><br />
                         4.2023
                     </p>
                 </div>

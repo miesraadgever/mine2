@@ -26,11 +26,10 @@ const Page = () => {
                 <div className={`${smallScreen ? "ml-2 mb-4" : "p-6 mb-4"} `}>
                     <h3 className="font-medium text-xl">MELANCHOLY ARCHIVE</h3>
                     <p className="mt-3">
-                        {t("melancholy.caption")}
-                        <br />
-                        <br />
-                        {t("melancholy.caption2")}
-                        <br />
+                        {t("melancholy.caption")} <br />
+                        {t("melancholy.caption2")}; {t("melancholy.caption21")}<br /><br />
+                        {t("melancholy.caption22")}<br /><br />
+                        {t("melancholy.caption23")} - {t("melancholy.caption24")}<br />
                         <br/>
                         {t("melancholy.caption3")}
                         <br />

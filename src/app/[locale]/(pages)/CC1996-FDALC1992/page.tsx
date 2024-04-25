@@ -29,7 +29,7 @@ const Page = () => {
                     <p className="mt-3">
                         {t("cc.caption")}
                         <br />
-                        {t("general.prijsaanvraag")}
+                        <i>{t("general.prijsaanvraag")}</i>
                         <br />
                         <br />
                         {t("general.credits")}<i> mies raadgever & neeltje de jong</i>
@@ -55,28 +55,43 @@ const Page = () => {
                     </div>
                 )}
                 {/* Images */}
-                <div className={`flex-wrap flex gap-3 ${smallScreen ? " justify-center" : "ml-6 justify-center"}`}>
-                    <div className="">
+                <div className={`flex-wrap flex gap-2 mt-10 ${smallScreen ? " justify-center" : "ml-6 justify-start"}`}>
                         <CldImage
-                            src={"https://res.cloudinary.com/dwgsproch/image/upload/v1710074528/12%20MI_NE%202021%201%20-%20CC%201996%20FDALC%201992/FDALC1992.png"                            }
+                                src={
+                                    "https://res.cloudinary.com/dwgsproch/image/upload/v1710074526/12%20MI_NE%202021%201%20-%20CC%201996%20FDALC%201992/CC1996.jpg"                            }
+                                alt={"ma-2"}
+                                width={300}
+                                height={450}
+                                className={"object-cover w-60 h-80"}
+                                onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710074526/12%20MI_NE%202021%201%20-%20CC%201996%20FDALC%201992/CC1996.jpg")}
+                            />
+                        <CldImage
+                            src={"https://res.cloudinary.com/dwgsproch/image/upload/v1714055802/12%20MI_NE%202021%201%20-%20CC%201996%20FDALC%201992/2021-02-16_15.07.16-1_mumgcm.jpg"                            }
                             alt={"ma-1"}
-                            width={400}
-                            height={500}
-                            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710074528/12%20MI_NE%202021%201%20-%20CC%201996%20FDALC%201992/FDALC1992.png")}
+                            width={300}
+                            height={450}
+                            className={"object-cover w-60 h-80"}
+                            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1714055802/12%20MI_NE%202021%201%20-%20CC%201996%20FDALC%201992/2021-02-16_15.07.16-1_mumgcm.jpg")}
 
                         />
-                    </div>
-                    <div className="">
                         <CldImage
-                            src={
-                                "https://res.cloudinary.com/dwgsproch/image/upload/v1710074526/12%20MI_NE%202021%201%20-%20CC%201996%20FDALC%201992/CC1996.jpg"                            }
-                            alt={"ma-2"}
-                            width={400}
-                            height={500}
-                            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1710074526/12%20MI_NE%202021%201%20-%20CC%201996%20FDALC%201992/CC1996.jpg")}
+                            src={"https://res.cloudinary.com/dwgsproch/image/upload/v1714055025/12%20MI_NE%202021%201%20-%20CC%201996%20FDALC%201992/10_kq6rps.jpg"                            }
+                            alt={"ma-1"}
+                            width={300}
+                            height={450}
+                            className={"object-cover w-60 h-80"}
+                            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1714055025/12%20MI_NE%202021%201%20-%20CC%201996%20FDALC%201992/10_kq6rps.jpg")}
 
                         />
-                    </div>
+                        <CldImage
+                            src={"https://res.cloudinary.com/dwgsproch/image/upload/v1714055030/12%20MI_NE%202021%201%20-%20CC%201996%20FDALC%201992/2021-01-07_15.28.22_kfirer.jpg"                            }
+                            alt={"ma-1"}
+                            width={300}
+                            height={450}
+                            className={"object-cover w-60 h-80"}
+                            onClick={() => showModal("https://res.cloudinary.com/dwgsproch/image/upload/v1714055030/12%20MI_NE%202021%201%20-%20CC%201996%20FDALC%201992/2021-01-07_15.28.22_kfirer.jpg")}
+
+                        />
                 </div>
             </div>
             {/* Grote afbeelding rechts  */}

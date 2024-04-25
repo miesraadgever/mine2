@@ -23,12 +23,12 @@ const Page = () => {
             {t("general.credits")} <i>{t("general.neeltje")}</i>
             <br /> <br />
             {t("general.ongoing")}
-          </p>
+          </p> 
         </div>
 
         {/* Images */}
         <div
-          className={`fixed right-2 justify-end flex col-6 flex-wrap flex gap-2 mt-10 ${smallScreen ? " justify-center" : "ml-6 justify-start"}`}
+        className={`col-6 flex-wrap flex gap-2 mt-10 ${smallScreen ? " justify-center" : " justify-start"}`}
         >
           <a href="/body/choker">
             {" "}

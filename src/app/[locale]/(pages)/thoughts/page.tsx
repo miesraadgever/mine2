@@ -31,10 +31,10 @@ const Page = () => {
             <i>{t("general.neeltje")}</i> {t("thoughts.caption2")}
             <br />
             <br />
-            {t("thoughts.klik")}
+            <i>{t("thoughts.klik")}</i>
             <br />
             <br />
-            <i>6.2022</i>
+            6.2022
           </p>
         </div>
         {/* Grote afbeelding rechts  */}
