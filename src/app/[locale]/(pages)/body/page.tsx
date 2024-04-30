@@ -27,8 +27,10 @@ const Page = () => {
         </div>
 
         {/* Images */}
-        <div className={`flex-wrap flex flex-row gap-2 mt-10 ${smallScreen ? " justify-center col-12" : " justify-start col-6"}`}>
-          <a href="/body/choker">
+          <div
+              className={`flex-wrap flex gap-2 mt-10 ${smallScreen ? " justify-center col-12" : " justify-start col-6"}`}
+          >
+              <a href="/body/choker">
             <div className="">
               <CldImage
                 src={
@@ -37,12 +39,11 @@ const Page = () => {
                 alt={"choker"}
                 width={180}
                 height={240}
-                className="w-43 h-48 object-cover"
+                className={`${smallScreen ? "w-40 h-48" : "w-43 h-48"} object-cover`}
               />
-            </div>{" "}
+            </div>
           </a>
           <a href="/body/haarbloempjes">
-            {" "}
             <div className="">
               <CldImage
                 src={
@@ -51,12 +52,11 @@ const Page = () => {
                 alt={"haar"}
                 width={180}
                 height={240}
-                className="w-43 h-48 object-cover"
+                className={`${smallScreen ? "w-40 h-48" : "w-43 h-48"} object-cover`}
               />
             </div>{" "}
           </a>
           <a href="/body/adorn">
-            {" "}
             <div className="">
               <CldImage
                 src={
@@ -65,12 +65,11 @@ const Page = () => {
                 alt={"adorn"}
                 width={180}
                 height={240}
-                className="w-43 h-48 object-cover"
+                className={`${smallScreen ? "w-40 h-48" : "w-43 h-48"} object-cover`}
               />
             </div>{" "}
           </a>
           <a href="/body/buikketting">
-            {" "}
             <div className="">
               <CldImage
                 src={
@@ -79,9 +78,9 @@ const Page = () => {
                 alt={"buik"}
                 width={180}
                 height={240}
-                className="w-43 h-48 object-cover"
+                className={`${smallScreen ? "w-40 h-48" : "w-43 h-48"} object-cover`}
               />
-            </div>{" "}
+            </div>
           </a>
         </div>
       </div>
