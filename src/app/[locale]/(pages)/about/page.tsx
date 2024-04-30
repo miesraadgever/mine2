@@ -25,15 +25,12 @@ const Page = () => {
             {t("about.paragraph2")}
             <br />
             <br />
-            {t("about.paragraph3")}
-            <br />
-            <Link href={"/mies"} className={"underline"}>Mies Raadgever</Link><br />
-            <Link href={"/neeltje"} className="underline">Neeltje de Jong</Link>
-            <br />
-            <br />
-            {t("about.paragraph4")}
-            <br />
-            miesneeltje@gmail.com
+            <div className={"text-sm"}>
+              {t("about.paragraph4")}
+               <span> miesneeltje@gmail.com</span>
+              <br />
+              <br />
+            </div>
           </div>
         </div>
         <div
@@ -72,6 +69,9 @@ const Page = () => {
         </div>
         {smallScreen && (
           <div className="flex col-12 flex-col  gap-10 justify-start pl-5">
+            <div>
+              <a href={"/mies"}><span className={"text-sm underline"}>{t("about.individualProjects")}</span></a>
+            </div>
             <div className="text-sm ">
               <i>
                 <a
@@ -80,8 +80,8 @@ const Page = () => {
                   className={"hover:opacity-50"}
                 >
                   no-souls.blogspot.com
-                </a>{" "}
-              </i>{" "}
+                </a>
+              </i>
               <br />
               <i>@miesraadgever</i> <br />
               <i>mjraadgever@gmail.com</i>
@@ -121,6 +121,10 @@ const Page = () => {
         </div>
         {smallScreen && (
           <div className="flex col-12 flex-col gap-10 justify-start pl-5">
+           <div>
+             <a href={"/neeltje"}><span className={"text-sm underline"}>{t("about.individualProjects")}</span></a>
+           </div>
+
             <div className="text-sm">
               <i>
                 <a
@@ -162,6 +166,10 @@ const Page = () => {
         <div className="flex flex-row gap-10 col-12 mb-5">
           <div className="flex col-5 flex-column pl-5">
             <div className="text-sm pl-7">
+              <a href={"/mies"}><span className={"text-sm underline"}>{t("about.individualProjects")}</span></a>
+              <br/>
+              <br/>
+
               <i>
                 <a
                   href={"http://no-souls.blogspot.com/"}
@@ -189,6 +197,9 @@ const Page = () => {
           </div>
           <div className="flex col-6 flex-column pl-5">
             <div className="text-sm pl-7">
+              <a href={"/neeltje"}><span className={"text-sm underline"}>{t("about.individualProjects")}</span></a>
+              <br/>
+              <br/>
               <i>
                 <a
                   href={"http://www.nelaneeltje.blogspot.com"}
@@ -221,7 +232,9 @@ const Page = () => {
           </div>
         </div>
       )}
-      <div className={"text-xs opacity-50 flex justify-center pb-3 pt-6"}>copyright © 2024 mi-ne movement inc. all rights reserved</div>
+      <div className={"text-xs opacity-50 flex justify-center pb-3 pt-6"}>copyright © 2024 mi-ne movement inc. all rights reserved
+      | {t("about.websiteCredits")}
+      </div>
 
     </>
   );

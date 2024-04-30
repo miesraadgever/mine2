@@ -20,8 +20,10 @@ export default {
     paragraph2:
       "Binnen mi_ne movement onderzoeken Mies en Neeltje oa. thema’s als dualiteit, feminine rage en lichamelijke expressie. Deze thema’s worden zowel mysthiek als confronterend tot vorm gebracht in projecten variërend van audiovisueel werk tot schilderijen, tot teksten en terug naar kleding.",
     paragraph3:
-      "Op de persoonlijke pagina’s vind je meer over onze eigen projecten;",
-    paragraph4: "Neem gerust contact met ons op, wij staan als collectief zowel als individueel open voor nieuwe samenwerkingen;",
+      "Op de persoonlijke pagina’s vind je meer over onze eigen projecten:",
+    paragraph4: "Neem gerust contact met ons op, wij staan als collectief zowel als individueel open voor nieuwe samenwerkingen:",
+    websiteCredits: "mi-nemovement.nl is ontworpen en ontwikkeld door Mies Raadgever en Neeltje de Jong.",
+    individualProjects: "Zie individuele projecten hier",
     miesParagraph1: "Mies werkt als beeldend kunstenaar en ontwerper",
     miesParagraph2:
       "‘Opgeleid als grafisch ontwerper begon ik met het abstract verbeelden van concepten. Langzamerhand is mijn praktijk meer ge-shift naar werk wat de scheidingslijn en grenzen tussen digitaal en analoog werk ontdekt.'",

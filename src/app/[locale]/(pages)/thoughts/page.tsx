@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, {Suspense, useState} from "react";
 import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import HDImage from "@/components/HDImage";
 import paceHolderImage from "../../../../../public/7.jpeg";
+import Header from "@/components/Header";
 
 const Page = () => {
   const t = useI18n();
@@ -20,6 +21,7 @@ const Page = () => {
   };
 
   return (
+      <Suspense fallback={<div>Loading..</div>}>
     <div className={`flex ${smallScreen ? "flex-col" : "flex-row"} col-12 `}>
       <div className={`flex flex-col ${smallScreen ? "col-12" : "col-4"}`}>
         {/* Text */}
@@ -89,6 +91,7 @@ const Page = () => {
         show={show}
       />
     </div>
+      </Suspense>
   );
 };
 
