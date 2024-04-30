@@ -5,6 +5,7 @@ import { useI18n } from "../../../../../translations/client";
 import Image from "next/image";
 import { useWindowSize } from "@/lib/hooks/useWindowsize";
 import HDImage from "@/components/HDImage";
+import paceHolderImage from "../../../../../public/7.jpeg";
 
 const Page = () => {
   const t = useI18n();
@@ -41,6 +42,8 @@ const Page = () => {
             <div className="flex ">
               <Image
                   loading={"eager"}
+                  placeholder={"blur"}
+                  blurDataURL={"../../../../../public/7.jpeg"}
                 src={
                   "https://res.cloudinary.com/dwgsproch/image/upload/v1711795937/NEELTJE%20-%20here%2C%20my%20thoughts/walllllllll-min_cqco5v.jpg"
                 }
@@ -62,8 +65,9 @@ const Page = () => {
       {!smallScreen && (
         <div className={`fixed right-0 justify-end flex col-8 p-0`}>
           <Image
+              placeholder={"blur"}
+              blurDataURL={"../../../../../public/7.jpeg"}
               loading={"eager"}
-
               src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1711795937/NEELTJE%20-%20here%2C%20my%20thoughts/walllllllll-min_cqco5v.jpg"
             }
