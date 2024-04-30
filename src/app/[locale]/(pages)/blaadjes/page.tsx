@@ -110,6 +110,8 @@ const Page = () => {
         hideDialog={() => setShow(false)}
         imageUrl={imageUrl}
         show={show}
+        width={1400}
+        height={1900}
       />
     </div>
   );

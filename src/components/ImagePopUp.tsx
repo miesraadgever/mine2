@@ -6,12 +6,15 @@ interface ImagePopUpProps {
   hideDialog: () => void;
   imageUrl: string;
   show: boolean;
+  width?: number;
+  height?: number;
 }
 
 const ImagePopUp: React.FC<ImagePopUpProps> = ({
   hideDialog,
   imageUrl,
   show,
+    width, height
 }) => {
   const handleClickOutside = (event: React.MouseEvent<HTMLDivElement>) => {
     hideDialog();
@@ -27,13 +30,14 @@ const ImagePopUp: React.FC<ImagePopUpProps> = ({
           <CldImage
             src={imageUrl}
             alt="foto3"
-            width={600}
-            height={700}
+            width={!!width ? width : 600}
+            height={!!height? height: 700}
             style={{
               objectFit: "cover",
-              width: "85%",
+              width: "90%",
               height: "auto",
               display: "block",
+              margin: 2
             }}
           />
         </div>
