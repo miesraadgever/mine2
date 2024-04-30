@@ -221,6 +221,8 @@ const Page = () => {
           </div>
         </div>
       )}
+      <div className={"text-xs opacity-50 flex justify-center pb-3 pt-6"}>copyright © 2024 mi-ne movement inc. all rights reserved</div>
+
     </>
   );
 };

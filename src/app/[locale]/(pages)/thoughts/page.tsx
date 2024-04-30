@@ -40,6 +40,7 @@ const Page = () => {
           <div className={"col-12 justify-center flex"}>
             <div className="flex ">
               <Image
+                  loading={"eager"}
                 src={
                   "https://res.cloudinary.com/dwgsproch/image/upload/v1711795937/NEELTJE%20-%20here%2C%20my%20thoughts/walllllllll-min_cqco5v.jpg"
                 }
@@ -60,11 +61,15 @@ const Page = () => {
 
       {!smallScreen && (
         <div className={`fixed right-0 justify-end flex col-8 p-0`}>
-          <img
-            src={
+          <Image
+              loading={"eager"}
+
+              src={
               "https://res.cloudinary.com/dwgsproch/image/upload/v1711795937/NEELTJE%20-%20here%2C%20my%20thoughts/walllllllll-min_cqco5v.jpg"
             }
             alt={"wall1"}
+              width={1200}
+              height={800}
             className={"h-auto max-h-screen w-auto justify-end"}
             onClick={() =>
               showModal(
