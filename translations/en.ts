@@ -232,4 +232,7 @@ export default {
   cc: {
     caption: "i.e. patchwork jeans, sketchbook jeans",
   },
+  strandedFM: {
+    caption: "mi_ne radio features a mix of ambient music, field/voice recordings, and music fragments, providing a soothing and experimental soundscape that aims to  evoke a feeling of nostalgia. Airing once every two months at strandedFM."
+  }
 };

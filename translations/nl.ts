@@ -230,4 +230,7 @@ export default {
   cc: {
     caption: "i.e. patchwork jeans, sketchbook jeans",
   },
+  strandedFM: {
+    caption: "mi_ne radio is een mix van ambient muziek, field-/stemopnames en audiofragmenten, en biedt een rustgevend en experimentele soundscape dat streeft naar een gevoel van nostalgie op te roepen. Het wordt om de twee maanden live uitgezonden op strandedFM."
+  }
 };
