@@ -136,7 +136,14 @@ const Page = () => {
                 </a>
               </i>
               <br />
-              <i>@nelaneeltje</i> <br />
+              <i>
+              <a
+                  href={"https://www.instagram.com/braidingautonomy/"}
+                  target="_blank"
+                  className={"hover:opacity-50"}
+                >
+                  @braidingautonomy
+                </a></i> <br />
               <i>nelaneeltje@gmail.com</i>
               <br /> <br />
             </div>
